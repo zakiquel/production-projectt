@@ -1,12 +1,17 @@
 {
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
+    " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
+      "": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam."
+    }
+  },
   "Toggle": "Toggle",
   "throw error": "throw error",
-  "Главная": "Главная",
-  "Главная страница": "Главная страница",
-  "О сайте": "О сайте",
-  "О сайте123123": "О сайте123123",
-  "Обновить страницу": "Обновить страницу",
-  "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
-  "Страница не найдена": "Страница не найдена",
-  "Язык": "Язык"
+  "Войти": "Log in",
+  "Главная": "Main",
+  "Главная страница": "Main page",
+  "О сайте": "About us",
+  "Обновить страницу": "Refresh page",
+  "Произошла непредвиденная ошибка": "An unexpected error occurred",
+  "Страница не найдена": "Page not found",
+  "Язык": "Language"
 }
