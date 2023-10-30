@@ -19,5 +19,7 @@
     }
   },
   "Increment": "Increment",
-  "Decrement": "Decrement"
+  "Decrement": "Decrement",
+  "Введите username": "Введите username",
+  "Введите пароль": "Введите пароль"
 }
