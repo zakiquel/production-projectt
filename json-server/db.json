@@ -25,5 +25,14 @@
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "first": "Кирилл",
+    "lastname": "Завалишин",
+    "age": "21",
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Tomsk",
+    "username": "admin",
+    "avatar": "https://pixelbox.ru/wp-content/uploads/2022/06/treugolnik-avatars-pixelbox.ru-1.jpg"
+  }
 }
