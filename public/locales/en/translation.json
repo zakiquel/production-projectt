@@ -12,18 +12,15 @@
   "Войти": "Log in",
   "Toggle": "Toggle",
   "Короткий язык": "En",
-  "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
-    " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
-      "": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam."
-    }
-  },
   "Increment": "Increment",
   "Decrement": "Decrement",
   "Введите username": "Enter username",
   "Введите пароль": "Enter password",
   "Войдите в аккаунт": "log in to your account",
   "Вы ввели неверный логин или пароль": "You entered an incorrect username or password",
-  "Выйти": "Выйти",
+  "Выйти": "Log out",
   "ProfilePage": "ProfilePage",
-  "Укажите валюту": "Укажите валюту"
+  "Укажите валюту": "Enter currency",
+  "Профиль": "Profile",
+  "Укажите страну": "Enter country"
 }

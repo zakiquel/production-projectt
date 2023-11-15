@@ -65,8 +65,6 @@ export const ProfileCard = (props: ProfileCardProps) => {
     );
   }
 
-  const countryOptions = Object.entries(Country).map((val) => ({ value: val[0], content: val[1] }));
-
   const mods: Mods = {
     [cls.editing]: !readonly,
   };

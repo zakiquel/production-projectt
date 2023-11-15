@@ -3,28 +3,24 @@
   "Перевод": "Перевод",
   "Главная страница": "Главная страница",
   "Язык": "Русский",
-  "новый перевод": "новый перевод",
   "Страница не найдена": "Страница не найдена",
   "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
   "Обновить страницу": "Обновить страницу",
-  "throw error": "throw error",
+  "throw error": "Кинуть ошибку",
   "Главная": "Главная",
   "О сайте": "О сайте",
   "Войти": "Войти",
-  "Toggle": "Toggle",
+  "Toggle": "Сменить",
   "Короткий язык": "Ru",
-  "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
-    " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
-      "": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam."
-    }
-  },
-  "Increment": "Increment",
-  "Decrement": "Decrement",
-  "Введите username": "Введите username",
+  "Increment": "Увеличить",
+  "Decrement": "Уменьшить",
+  "Введите username": "Введите никнейм",
   "Введите пароль": "Введите пароль",
   "Войдите в аккаунт": "Войдите в аккаунт",
   "Вы ввели неверный логин или пароль": "Вы ввели неверный логин или пароль",
   "Выйти": "Выйти",
-  "ProfilePage": "ProfilePage",
-  "Укажите валюту": "Укажите валюту"
+  "ProfilePage": "Страница профиля",
+  "Укажите валюту": "Укажите валюту",
+  "Укажите страну": "Укажите страну",
+  "Профиль": "Профиль"
 }
