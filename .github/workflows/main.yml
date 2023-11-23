@@ -9,7 +9,9 @@ jobs:
     runs-on: windows-2019
     strategy:
       matrix:
-        node-version : [ 16.x ]
+        os: [ ubuntu-latest, windows-2019 ]
+        node-version: [ 17.x ]
+        runs-on: ${{ matrix.os }}
 
     steps:
       - uses: actions/checkout@v2
