@@ -1,5 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
 
 import { Article } from 'entities/Article';
 import { ArticleBlockType, ArticleType } from 'entities/Article/model/types/article';
@@ -8,13 +9,18 @@ import ArticleDetailsPage from './ArticleDetailsPage';
 export default {
   title: 'pages/ArticleDetailsPage',
   component: ArticleDetailsPage,
+  parameters: {
+    router: {
+      path: '/articles/:id',
+      route: '/articles/1',
+    },
+  },
   argTypes: {
     backgroundColor: { control: 'color' },
   },
 } as ComponentMeta<typeof ArticleDetailsPage>;
 
 const Template: ComponentStory<typeof ArticleDetailsPage> = (args) => <ArticleDetailsPage {...args} />;
-
 const article: Article = {
   id: '1',
   title: 'Javascript news',
@@ -87,3 +93,16 @@ const article: Article = {
 
 export const Normal = Template.bind({});
 Normal.args = {};
+Normal.decorators = [StoreDecorator({
+  articleDetails: {
+    data: article,
+  },
+})];
+
+export const PageLoading = Template.bind({});
+PageLoading.args = {};
+PageLoading.decorators = [StoreDecorator({
+  articleDetails: {
+    isLoading: true,
+  },
+})];
