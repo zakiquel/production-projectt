@@ -3,9 +3,9 @@ import {
   getArticleDetailsData,
   getArticleDetailsError,
   getArticleDetailsIsLoading,
-} from './getArticleDetails';
+} from './articleDetails';
 
-describe('getArticleDetails.test', () => {
+describe('articleDetails.test', () => {
   test('should return data', () => {
     const data = {
       id: '1',
