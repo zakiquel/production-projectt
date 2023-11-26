@@ -21,9 +21,9 @@ Primary.args = {
   children: 'Lorem ipasdjaoihfo  ajfpdjfipadjfjipLorem ipasdjaoihfo  ajfpdjfipadjfjip',
 };
 
-export const Dark = Template.bind({});
-Dark.args = {
+export const Light = Template.bind({});
+Light.args = {
   isOpen: true,
   children: 'Lorem ipasdjaoihfo  ajfpdjfipadjfjipLorem ipasdjaoihfo  ajfpdjfipadjfjip',
 };
-Dark.decorators = [ThemeDecorator(Theme.DARK)];
+Light.decorators = [ThemeDecorator(Theme.DARK)];

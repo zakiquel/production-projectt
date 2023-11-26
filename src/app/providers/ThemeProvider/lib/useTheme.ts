@@ -2,8 +2,8 @@ import { useContext } from 'react';
 import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext } from './ThemeContext';
 
 interface UseThemeResult {
-    toggleTheme: () => void;
-    theme: Theme;
+  theme: Theme;
+  toggleTheme: () => void;
 }
 
 export function useTheme(): UseThemeResult {
@@ -13,16 +13,16 @@ export function useTheme(): UseThemeResult {
     let newTheme: Theme;
     switch (theme) {
     case Theme.DARK:
-      newTheme = Theme.LIGHT;
+      newTheme = Theme.NORMAL;
       break;
-    case Theme.LIGHT:
+    case Theme.NORMAL:
       newTheme = Theme.CUSTOM;
       break;
     case Theme.CUSTOM:
       newTheme = Theme.DARK;
       break;
     default:
-      newTheme = Theme.DARK;
+      newTheme = Theme.NORMAL;
     }
     setTheme?.(newTheme);
     document.body.className = newTheme;
@@ -30,7 +30,7 @@ export function useTheme(): UseThemeResult {
   };
 
   return {
-    theme: theme || Theme.DARK,
+    theme: theme || Theme.NORMAL,
     toggleTheme,
   };
 }

@@ -4,6 +4,7 @@ import { TestAsyncThunk } from 'shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
 import { updateProfileData } from './updateProfileData';
 
 const formData: Profile = {
+  id: '1',
   username: 'kirillzav',
   first: 'kirill',
   lastname: 'zavalishin',

@@ -31,22 +31,22 @@ OnlyText.args = {
   text: 'text',
 };
 
-export const PrimaryDark = Template.bind({});
-PrimaryDark.args = {
+export const PrimaryLight = Template.bind({});
+PrimaryLight.args = {
   title: 'Title',
   text: 'text',
 };
-PrimaryDark.decorators = [ThemeDecorator(Theme.DARK)];
-export const OnlyTitleDark = Template.bind({});
-OnlyTitleDark.args = {
+PrimaryLight.decorators = [ThemeDecorator(Theme.DARK)];
+export const OnlyTitleLight = Template.bind({});
+OnlyTitleLight.args = {
   title: 'Title',
 };
-OnlyTitleDark.decorators = [ThemeDecorator(Theme.DARK)];
-export const OnlyTextDark = Template.bind({});
-OnlyTextDark.args = {
+OnlyTitleLight.decorators = [ThemeDecorator(Theme.DARK)];
+export const OnlyTextLight = Template.bind({});
+OnlyTextLight.args = {
   text: 'text',
 };
-OnlyTextDark.decorators = [ThemeDecorator(Theme.DARK)];
+OnlyTextLight.decorators = [ThemeDecorator(Theme.DARK)];
 
 export const SizeL = Template.bind({});
 SizeL.args = {
