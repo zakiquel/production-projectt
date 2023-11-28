@@ -1,12 +1,18 @@
-import { classNames } from 'shared/lib/classNames/classNames';
-import { useTranslation } from 'react-i18next';
-import { memo } from 'react';
-import { Article, ArticleList } from 'entities/Article';
-import cls from './ArticlesPage.module.scss';
+import React from 'react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-interface ArticlesPageProps {
-  className?: string;
-}
+import { Article, ArticleView } from '../../model/types/article';
+import { ArticleListItem } from './ArticleListItem';
+
+export default {
+  title: 'entities/Article/ArticleListItem',
+  component: ArticleListItem,
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
+} as ComponentMeta<typeof ArticleListItem>;
+
+const Template: ComponentStory<typeof ArticleListItem> = (args) => <ArticleListItem {...args} />;
 
 const article = {
   id: '1',
@@ -140,19 +146,14 @@ const article = {
     },
   ],
 } as Article;
-
-const ArticlesPage = (props: ArticlesPageProps) => {
-  const {
-    className,
-  } = props;
-  const { t } = useTranslation('articles page');
-  return (
-    <div className={classNames(cls.ArticlesPage, {}, [className])}>
-      <ArticleList
-        articles={[]}
-      />
-    </div>
-  );
+export const List = Template.bind({});
+List.args = {
+  view: ArticleView.LIST,
+  article,
 };
 
-export default memo(ArticlesPage);
+export const Tile = Template.bind({});
+Tile.args = {
+  view: ArticleView.TILE,
+  article,
+};

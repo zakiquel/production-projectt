@@ -1,12 +1,18 @@
-import { classNames } from 'shared/lib/classNames/classNames';
-import { useTranslation } from 'react-i18next';
-import { memo } from 'react';
-import { Article, ArticleList } from 'entities/Article';
-import cls from './ArticlesPage.module.scss';
+import React from 'react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-interface ArticlesPageProps {
-  className?: string;
-}
+import { Article, ArticleView } from '../../model/types/article';
+import { ArticleList } from './ArticleList';
+
+export default {
+  title: 'entities/Article/ArticleList',
+  component: ArticleList,
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
+} as ComponentMeta<typeof ArticleList>;
+
+const Template: ComponentStory<typeof ArticleList> = (args) => <ArticleList {...args} />;
 
 const article = {
   id: '1',
@@ -141,18 +147,42 @@ const article = {
   ],
 } as Article;
 
-const ArticlesPage = (props: ArticlesPageProps) => {
-  const {
-    className,
-  } = props;
-  const { t } = useTranslation('articles page');
-  return (
-    <div className={classNames(cls.ArticlesPage, {}, [className])}>
-      <ArticleList
-        articles={[]}
-      />
-    </div>
-  );
+export const IsLoadingList = Template.bind({});
+IsLoadingList.args = {
+  isLoading: true,
+  articles: [],
+  view: ArticleView.LIST,
 };
 
-export default memo(ArticlesPage);
+export const IsLoadingTile = Template.bind({});
+IsLoadingTile.args = {
+  isLoading: true,
+  articles: [],
+  view: ArticleView.TILE,
+};
+
+export const Tile = Template.bind({});
+Tile.args = {
+  articles:
+    new Array(9)
+      .fill(0)
+      .map((item, index) => ({
+        ...article,
+        id: String(index),
+      })),
+  view: ArticleView.TILE,
+  isLoading: false,
+};
+
+export const List = Template.bind({});
+List.args = {
+  articles:
+    new Array(9)
+      .fill(0)
+      .map((item, index) => ({
+        ...article,
+        id: String(index),
+      })),
+  view: ArticleView.LIST,
+  isLoading: false,
+};

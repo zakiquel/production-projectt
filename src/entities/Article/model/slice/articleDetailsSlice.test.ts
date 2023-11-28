@@ -12,6 +12,10 @@ const data: Article = {
   img: 'image',
   views: 1024,
   createdAt: '21.11.2023',
+  user: {
+    id: '1',
+    username: 'zakiquel',
+  },
   type: [ArticleType.IT],
   blocks: [
     {
