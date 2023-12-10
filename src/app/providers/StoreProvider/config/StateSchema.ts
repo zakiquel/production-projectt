@@ -5,16 +5,17 @@ import {
   AnyAction, CombinedState, EnhancedStore, Reducer, ReducersMapObject,
 } from '@reduxjs/toolkit';
 import { ProfileSchema } from 'entities/Profile';
-import { NavigateOptions, To } from 'react-router-dom';
 import { AxiosInstance } from 'axios';
 import { ArticleDetailsSchema } from 'entities/Article';
 import { ArticleDetailsCommentsSchema } from 'pages/ArticleDetailsPage';
 import { AddCommentFormSchema } from 'features/addCommentForm';
 import { ArticlesPageSchema } from 'pages/ArticlesPage';
+import { ScrollRestorationSchema } from 'features/scrollRestoration';
 
 export interface StateSchema {
   counter: CounterSchema;
   user: UserSchema;
+  scrollRestoration: ScrollRestorationSchema;
 
   // Асинхронные редюсеры
   loginForm?: LoginSchema;
