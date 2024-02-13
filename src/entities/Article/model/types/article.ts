@@ -12,6 +12,7 @@ export enum ArticleBlockType {
   IMAGE = 'IMAGE',
 }
 export enum ArticleType {
+  ALL = 'ALL',
   IT = 'IT',
   SCIENCE = 'SCIENCE',
   ECONOMICS = 'ECONOMICS',

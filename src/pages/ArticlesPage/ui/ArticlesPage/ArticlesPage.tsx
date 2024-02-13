@@ -7,6 +7,7 @@ import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useSelector } from 'react-redux';
 import { Page } from 'widgets/Page/Page';
 import { useTranslation } from 'react-i18next';
+import { useSearchParams } from 'react-router-dom';
 import { ArticlePageFilters } from '../ArticlesPageFilters/ArticlePageFilters';
 import { initArticlesPage } from '../../model/services/initArticlesPage/initArticlesPage';
 import { fetchNextArticlesPage } from '../../model/services/fetchNextArticlesPage/fetchNextArticlesPage';
@@ -32,13 +33,13 @@ const ArticlesPage = (props: ArticlesPageProps) => {
   const articles = useSelector(getArticles.selectAll);
   const isLoading = useSelector(getArticlesPageIsLoading);
   const view = useSelector(getArticlesPageView);
-
+  const [searchParams] = useSearchParams();
   const onLoadNextPart = useCallback(() => {
     dispatch(fetchNextArticlesPage());
   }, [dispatch]);
 
   useInitialEffect(() => {
-    dispatch(initArticlesPage());
+    dispatch(initArticlesPage(searchParams));
   });
 
   return (
