@@ -526,80 +526,7 @@
       ]
     }
   ],
-  "comments": [
-    {
-      "id": "1",
-      "text": "Nice article",
-      "articleId": "1",
-      "userId": "1"
-    },
-    {
-      "id": "2",
-      "text": "Not a nice...",
-      "articleId": "1",
-      "userId": "2"
-    },
-    {
-      "id": "3",
-      "text": "Stfu its a good one",
-      "articleId": "1",
-      "userId": "1"
-    },
-    {
-      "text": "sdfdsf",
-      "articleId": "1",
-      "userId": "1",
-      "id": "vKAwy5E"
-    },
-    {
-      "text": "3123d",
-      "articleId": "1",
-      "userId": "1",
-      "id": "Wdf3mGg"
-    },
-    {
-      "text": "sfsdf",
-      "articleId": "1",
-      "userId": "1",
-      "id": "ZBlW1lb"
-    },
-    {
-      "text": "dfdfdfd",
-      "articleId": "1",
-      "userId": "1",
-      "id": "mGpxZs0"
-    },
-    {
-      "text": "sadasd",
-      "articleId": "2",
-      "userId": "1",
-      "id": "XqSmLsM"
-    },
-    {
-      "text": "fdfdf",
-      "articleId": "3",
-      "userId": "1",
-      "id": "bBlb6Po"
-    },
-    {
-      "text": "dsdsd",
-      "articleId": "1",
-      "userId": "1",
-      "id": "crYyf8A"
-    },
-    {
-      "text": "fdfdf",
-      "articleId": "16",
-      "userId": "1",
-      "id": "jKiekHx"
-    },
-    {
-      "text": "dsdada",
-      "articleId": "16",
-      "userId": "1",
-      "id": "LKeFBhV"
-    }
-  ],
+  "comments": [],
   "users": [
     {
       "id": "1",
@@ -610,8 +537,8 @@
     },
     {
       "id": "2",
-      "username": "pewqq",
-      "password": "321",
+      "username": "user",
+      "password": "user",
       "role": "USER",
       "avatar": "https://clck.ru/36nvwp"
     }
