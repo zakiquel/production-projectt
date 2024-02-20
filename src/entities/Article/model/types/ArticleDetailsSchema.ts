@@ -1,4 +1,4 @@
-import { Article } from '../types/Article';
+import { Article } from './article';
 
 export interface ArticleDetailsSchema {
   isLoading: boolean;
