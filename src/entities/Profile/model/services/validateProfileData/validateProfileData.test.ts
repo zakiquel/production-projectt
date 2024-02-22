@@ -1,5 +1,5 @@
 import { Country } from 'entities/Country';
-import { Profile, ValidateProfileErrors } from 'entities/Profile';
+import { Profile, ValidateProfileErrors } from '../../types/profile';
 import { validateProfileData } from './validateProfileData';
 
 const profileData: Profile = {

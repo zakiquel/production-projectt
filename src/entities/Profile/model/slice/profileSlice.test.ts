@@ -1,9 +1,8 @@
-import {
-  profileActions, profileReducer, ProfileSchema, updateProfileData,
-} from 'entities/Profile';
 import { Currency } from 'entities/Currency';
 import { Country } from 'entities/Country';
-import { ValidateProfileErrors } from '../types/profile';
+import { updateProfileData } from '../services/updateProfileData/updateProfileData';
+import { profileActions, profileReducer } from './profileSlice';
+import { ProfileSchema, ValidateProfileErrors } from '../types/profile';
 
 const data = {
   first: 'kirill',

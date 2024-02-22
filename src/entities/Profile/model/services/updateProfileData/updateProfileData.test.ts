@@ -1,6 +1,6 @@
 import { Country } from 'entities/Country';
-import { Profile, ValidateProfileErrors } from 'entities/Profile';
 import { TestAsyncThunk } from 'shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
+import { Profile, ValidateProfileErrors } from '../../types/profile';
 import { updateProfileData } from './updateProfileData';
 
 const formData: Profile = {
