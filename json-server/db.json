@@ -526,7 +526,20 @@
       ]
     }
   ],
-  "comments": [],
+  "comments": [
+    {
+      "text": "dasdasd",
+      "articleId": "16",
+      "userId": "1",
+      "id": 1
+    },
+    {
+      "text": "das ddas",
+      "articleId": "16",
+      "userId": "1",
+      "id": 2
+    }
+  ],
   "users": [
     {
       "id": "1",
