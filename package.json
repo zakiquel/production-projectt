@@ -22,7 +22,8 @@
     "open": ".loki\\report.html",
     "test:ui:report": "npm run test:ui:json && npm run test:ui:html && npm run open",
     "storybook": "start-storybook -p 6006 -c ./config/storybook",
-    "storybook:build": "build-storybook -c ./config/storybook"
+    "storybook:build": "build-storybook -c ./config/storybook",
+    "generate:slice": "node ./scripts/createSlice/index.js"
   },
   "keywords": [],
   "author": "",
@@ -103,7 +104,7 @@
     "react-i18next": "^11.15.5",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.1",
-    "react-virtualized": "^9.22.3"
+    "react-virtualized": "^9.22.5"
   },
   "peerDependencies": {
     "react": "^17.0.2",
