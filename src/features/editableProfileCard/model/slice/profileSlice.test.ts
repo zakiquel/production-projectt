@@ -1,8 +1,8 @@
 import { Currency } from 'entities/Currency';
 import { Country } from 'entities/Country';
+import { ProfileSchema, ValidateProfileErrors } from '../types/editableProfileCardSchema';
 import { updateProfileData } from '../services/updateProfileData/updateProfileData';
 import { profileActions, profileReducer } from './profileSlice';
-import { ProfileSchema, ValidateProfileErrors } from '../types/profile';
 
 const data = {
   first: 'kirill',

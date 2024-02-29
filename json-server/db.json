@@ -538,6 +538,18 @@
       "articleId": "16",
       "userId": "1",
       "id": 2
+    },
+    {
+      "text": "3213",
+      "articleId": "10",
+      "userId": "1",
+      "id": 3
+    },
+    {
+      "text": "fdasfds",
+      "articleId": "10",
+      "userId": "1",
+      "id": 4
     }
   ],
   "users": [
@@ -565,7 +577,7 @@
       "currency": "RUB",
       "country": "Belarus",
       "city": "Tomsk",
-      "username": "zakiquel",
+      "username": "shpalazwer",
       "avatar": "https://clck.ru/36jJ25"
     },
     {
