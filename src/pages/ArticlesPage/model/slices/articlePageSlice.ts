@@ -26,7 +26,7 @@ export const articlePageSlice = createSlice({
     page: 1,
     hasMore: true,
     _inited: false,
-    limit: 5,
+    limit: 9,
     sort: ArticleSortField.CREATED,
     search: '',
     order: 'asc',
@@ -50,10 +50,10 @@ export const articlePageSlice = createSlice({
       state.search = action.payload;
     },
     initState: (state) => {
-      state._inited = true;
       const view = localStorage.getItem(ARTICLE_VIEW_LOCALSTORAGE_KEY) as ArticleView;
       state.view = view;
       state.limit = view === ArticleView.LIST ? 4 : 9;
+      state._inited = true;
     },
     setType: (state, action: PayloadAction<ArticleType>) => {
       state.type = action.payload;
@@ -76,7 +76,7 @@ export const articlePageSlice = createSlice({
           action,
         ) => {
           state.isLoading = false;
-          state.hasMore = action.payload.length > state.limit;
+          state.hasMore = action.payload.length >= state.limit;
 
           if (action.meta.arg.replace) {
             articlesAdapter.setAll(state, action.payload);

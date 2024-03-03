@@ -524,6 +524,176 @@
           "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
         }
       ]
+    },
+    {
+      "id": "17",
+      "title": "E-commerce Platform Optimization",
+      "subtitle": "Boosting performance and user experience",
+      "img": "https://wittysparks.com/wp-content/uploads/2019/05/ecommerce-platform-optimization-1536x937.jpg",
+      "views": 2800,
+      "createdAt": "03.03.2022",
+      "userId": "1",
+      "type": [
+        "WEB"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Overview",
+          "paragraphs": [
+            "In the competitive world of e-commerce, optimizing your online platform is crucial for success.",
+            "This article provides insights into e-commerce platform optimization, covering aspects such as website speed, mobile responsiveness, and implementing secure payment gateways to enhance the overall user experience."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://fs.hubspotusercontent00.net/hubfs/481308/guy%20holding%20mobile%20device.jpg",
+          "title": "Mobile Responsiveness"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "E-commerce Platform Optimization",
+      "subtitle": "Boosting performance and user experience",
+      "img": "https://wittysparks.com/wp-content/uploads/2019/05/ecommerce-platform-optimization-1536x937.jpg",
+      "views": 2800,
+      "createdAt": "03.03.2022",
+      "userId": "1",
+      "type": [
+        "WEB"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Overview",
+          "paragraphs": [
+            "In the competitive world of e-commerce, optimizing your online platform is crucial for success.",
+            "This article provides insights into e-commerce platform optimization, covering aspects such as website speed, mobile responsiveness, and implementing secure payment gateways to enhance the overall user experience."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://fs.hubspotusercontent00.net/hubfs/481308/guy%20holding%20mobile%20device.jpg",
+          "title": "Mobile Responsiveness"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "E-commerce Platform Optimization",
+      "subtitle": "Boosting performance and user experience",
+      "img": "https://wittysparks.com/wp-content/uploads/2019/05/ecommerce-platform-optimization-1536x937.jpg",
+      "views": 2800,
+      "createdAt": "03.03.2022",
+      "userId": "1",
+      "type": [
+        "WEB"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Overview",
+          "paragraphs": [
+            "In the competitive world of e-commerce, optimizing your online platform is crucial for success.",
+            "This article provides insights into e-commerce platform optimization, covering aspects such as website speed, mobile responsiveness, and implementing secure payment gateways to enhance the overall user experience."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://fs.hubspotusercontent00.net/hubfs/481308/guy%20holding%20mobile%20device.jpg",
+          "title": "Mobile Responsiveness"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "E-commerce Platform Optimization",
+      "subtitle": "Boosting performance and user experience",
+      "img": "https://wittysparks.com/wp-content/uploads/2019/05/ecommerce-platform-optimization-1536x937.jpg",
+      "views": 2800,
+      "createdAt": "03.03.2022",
+      "userId": "1",
+      "type": [
+        "WEB"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Overview",
+          "paragraphs": [
+            "In the competitive world of e-commerce, optimizing your online platform is crucial for success.",
+            "This article provides insights into e-commerce platform optimization, covering aspects such as website speed, mobile responsiveness, and implementing secure payment gateways to enhance the overall user experience."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://fs.hubspotusercontent00.net/hubfs/481308/guy%20holding%20mobile%20device.jpg",
+          "title": "Mobile Responsiveness"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "title": "E-commerce Platform Optimization",
+      "subtitle": "Boosting performance and user experience",
+      "img": "https://wittysparks.com/wp-content/uploads/2019/05/ecommerce-platform-optimization-1536x937.jpg",
+      "views": 2800,
+      "createdAt": "03.03.2022",
+      "userId": "1",
+      "type": [
+        "WEB"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Overview",
+          "paragraphs": [
+            "In the competitive world of e-commerce, optimizing your online platform is crucial for success.",
+            "This article provides insights into e-commerce platform optimization, covering aspects such as website speed, mobile responsiveness, and implementing secure payment gateways to enhance the overall user experience."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://fs.hubspotusercontent00.net/hubfs/481308/guy%20holding%20mobile%20device.jpg",
+          "title": "Mobile Responsiveness"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
+        }
+      ]
     }
   ],
   "comments": [
