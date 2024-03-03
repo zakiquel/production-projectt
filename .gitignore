@@ -2,6 +2,6 @@
 node_modules
 .idea
 /storybook-static
-.reports/unit/report.html
+/reports
 .loki/report.html
 .loki/report.json
