@@ -727,14 +727,21 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN",
+      "roles": ["ADMIN"],
       "avatar": "https://clck.ru/36jJ25"
     },
     {
       "id": "2",
       "username": "user",
       "password": "user",
-      "role": "USER",
+      "roles": ["USER"],
+      "avatar": "https://clck.ru/36nvwp"
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "password": "user",
+      "role": ["MANAGER"],
       "avatar": "https://clck.ru/36nvwp"
     }
   ],
