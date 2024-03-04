@@ -3,8 +3,8 @@ import { getUserAuthData, getUserRoles } from 'entities/User';
 import { Navigate, useLocation } from 'react-router-dom';
 import React, { useMemo } from 'react';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
-import { UserRole } from 'entities/User/model/types/user';
 import { use } from 'i18next';
+import { UserRole } from 'entities/User/model/const/userConsts';
 
 interface RequireAuthProps {
   children: JSX.Element;

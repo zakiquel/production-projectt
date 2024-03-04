@@ -1,7 +1,7 @@
 import { Country } from 'entities/Country';
 import { TestAsyncThunk } from 'shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
 import { Profile } from 'entities/Profile';
-import { ValidateProfileErrors } from '../../types/editableProfileCardSchema';
+import { ValidateProfileErrors } from '../../consts/cardConsts';
 import { updateProfileData } from './updateProfileData';
 
 const formData: Profile = {
