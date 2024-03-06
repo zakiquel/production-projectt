@@ -6,7 +6,6 @@ import { NotificationList } from 'entities/Notification';
 import { Popover } from 'shared/ui/Popups';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Drawer } from 'shared/ui/Drawer/Drawer';
-import { BrowserView, MobileView } from 'react-device-detect';
 import cls from './NotificationButton.module.scss';
 
 interface NotificationButtonProps {
@@ -33,10 +32,26 @@ export const NotificationButton = memo((props: NotificationButtonProps) => {
       <Icon Svg={NotificationIcon} inverted />
     </Button>
   );
+  function isDeviceMobile() {
+    const isMobile = window.matchMedia;
+    if (!isMobile) {
+      return false;
+    }
+
+    const device = isMobile('(pointer:coarse)');
+    return device.matches;
+  }
 
   return (
     <div>
-      <BrowserView>
+      {isDeviceMobile() ? (
+        <>
+          {trigger}
+          <Drawer isOpen={isOpen} onClose={onCloseDrawer}>
+            <NotificationList />
+          </Drawer>
+        </>
+      ) : (
         <Popover
           className={classNames('', {}, [className])}
           direction="bottom left"
@@ -44,13 +59,8 @@ export const NotificationButton = memo((props: NotificationButtonProps) => {
         >
           <NotificationList className={cls.notifications} />
         </Popover>
-      </BrowserView>
-      <MobileView>
-        {trigger}
-        <Drawer isOpen={isOpen} onClose={onCloseDrawer}>
-          <NotificationList />
-        </Drawer>
-      </MobileView>
+      )}
     </div>
+
   );
 });
