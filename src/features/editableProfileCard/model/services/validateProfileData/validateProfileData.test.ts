@@ -1,6 +1,6 @@
-import { Country } from 'entities/Country';
-import { Profile } from 'entities/Profile';
-import { Currency } from 'entities/Currency';
+import { Country } from '@/entities/Country';
+import { Profile } from '@/entities/Profile';
+import { Currency } from '@/entities/Currency';
 import { ValidateProfileErrors } from '../../consts/cardConsts';
 import { validateProfileData } from './validateProfileData';
 

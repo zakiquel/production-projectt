@@ -1,5 +1,5 @@
-import { Country } from 'entities/Country';
-import { Profile } from 'entities/Profile';
+import { Country } from '@/entities/Country';
+import { Profile } from '@/entities/Profile';
 
 import { ValidateProfileErrors } from '../../consts/cardConsts';
 
