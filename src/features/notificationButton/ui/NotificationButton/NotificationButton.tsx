@@ -6,8 +6,8 @@ import { NotificationList } from '@/entities/Notification';
 import { Popover } from '@/shared/ui/Popups';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Drawer } from '@/shared/ui/Drawer/Drawer';
-import { AnimationProvider } from '@/shared/lib/components/AnimationProvider';
 import cls from './NotificationButton.module.scss';
+import { useDevice } from '@/shared/lib/hooks/useDevice/useDevice';
 
 interface NotificationButtonProps {
   className?: string;
@@ -33,19 +33,11 @@ export const NotificationButton = memo((props: NotificationButtonProps) => {
       <Icon Svg={NotificationIcon} inverted />
     </Button>
   );
-  function isDeviceMobile() {
-    const isMobile = window.matchMedia;
-    if (!isMobile) {
-      return false;
-    }
-
-    const device = isMobile('(pointer:coarse)');
-    return device.matches;
-  }
+  const isDeviceMobile = useDevice();
 
   return (
     <div>
-      {isDeviceMobile() ? (
+      {isDeviceMobile ? (
         <>
           {trigger}
           <Drawer isOpen={isOpen} onClose={onCloseDrawer}>
