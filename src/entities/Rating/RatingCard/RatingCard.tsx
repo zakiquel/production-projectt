@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { memo, useCallback, useState } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import cls from './RatingCard.module.scss';
 import { Card } from '@/shared/ui/Card/Card';
 import { HStack, VStack } from '@/shared/ui/Stack';
 import { Text } from '@/shared/ui/Text/Text';
@@ -71,7 +70,7 @@ export const RatingCard = memo((props: RatingCardProps) => {
   const isDeviceMobile = useDevice();
 
   return (
-    <Card className={classNames(cls.RatingCard, {}, [className])}>
+    <Card className={classNames('', {}, [className])}>
       <VStack align="center" gap="8">
         <Text title={title} />
         <StarRating size={40} onSelect={onSelectStars} />
