@@ -20,7 +20,7 @@ export const StarRating = memo((props: StarRatingProps) => {
     size = 30,
     selectedStars = 0,
   } = props;
-  const [currentsStarsCount, setCurrentStarsCount] = useState(0);
+  const [currentsStarsCount, setCurrentStarsCount] = useState(selectedStars);
   const [isSelected, setIsSelected] = useState(Boolean(selectedStars));
 
   const onHover = (starsCount: number) => () => {

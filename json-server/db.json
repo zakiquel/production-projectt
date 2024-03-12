@@ -782,9 +782,9 @@
       "avatar": "https://clck.ru/36nvwp"
     },
     {
-      "id": "2",
-      "username": "user",
-      "password": "user",
+      "id": "3",
+      "username": "manager",
+      "password": "manager",
       "role": [
         "MANAGER"
       ],
@@ -813,6 +813,51 @@
       "city": "Tomsk",
       "username": "pewqq",
       "avatar": "https://clck.ru/36nvwp"
+    }
+  ],
+  "article-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "articleId": "2"
+    },
+    {
+      "userId": "1",
+      "articleId": "3",
+      "rate": 3,
+      "id": "weeJVBS"
+    },
+    {
+      "userId": "1",
+      "articleId": "4",
+      "rate": 4,
+      "feedback": "фывфыв",
+      "id": "t5853An"
+    }
+  ],
+  "profile-ratings": [
+    {
+      "id": "1",
+      "rate": "4",
+      "feedback": "Комментарий профиля",
+      "userId": "1",
+      "profileId": "1"
+    },
+    {
+      "id": "2",
+      "rate": "4",
+      "feedback": "Комментарий профиля",
+      "userId": "1",
+      "profileId": "2"
     }
   ]
 }
