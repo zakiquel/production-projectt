@@ -59,7 +59,7 @@ module.exports = {
     'no-param-reassign': 'off',
     'no-undef': 'off',
     'react/no-array-index-key': 'off',
-    'zavalition-fsd/path-checker': 'error',
+    'zavalition-fsd/path-checker': ['error', {alias: 'a'}],
   },
   globals: {
     __IS_DEV__: true,
