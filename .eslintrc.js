@@ -60,7 +60,13 @@ module.exports = {
     'no-undef': 'off',
     'react/no-array-index-key': 'off',
     'zavalition-fsd/path-checker': ['error', { alias: '@' }],
-    'zavalition-fsd/public-api-imports': ['error', { alias: '@' }],
+    'zavalition-fsd/public-api-imports': [
+      'error',
+      {
+        alias: '@',
+        testFilesPatterns: ['**/*.test.*', '**/*.stories.*', '**/StoreDecorator.tsx'],
+      },
+    ],
   },
   globals: {
     __IS_DEV__: true,
