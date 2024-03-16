@@ -60,6 +60,13 @@ module.exports = {
     'no-undef': 'off',
     'react/no-array-index-key': 'off',
     'zavalition-fsd/path-checker': ['error', { alias: '@' }],
+    'zavalition-fsd/layer-imports': [
+      'error',
+      {
+        alias: '@',
+        ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+      },
+    ],
     'zavalition-fsd/public-api-imports': [
       'error',
       {
