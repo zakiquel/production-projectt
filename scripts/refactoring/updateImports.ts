@@ -12,12 +12,16 @@ function isAbsolute(value: string) {
   return layers.some((layer) => value.startsWith(layer));
 }
 
+function isDoubleAlias(value: string) {
+  return value.startsWith('@/@/');
+}
+
 files.forEach((sourceFile) => {
   const importDeclarations = sourceFile.getImportDeclarations();
   importDeclarations.forEach((importDeclaration) => {
     const value = importDeclaration.getModuleSpecifierValue();
-    if (isAbsolute(value)) {
-      importDeclaration.setModuleSpecifier(`@/${value}`);
+    if (isDoubleAlias(value)) {
+      importDeclaration.setModuleSpecifier(`${value.replace('@/@/', '@/')}`);
     }
   });
 });
