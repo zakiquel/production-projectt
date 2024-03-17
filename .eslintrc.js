@@ -8,6 +8,8 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
     'plugin:i18next/recommended',
+    'eslint:recommended',
+    'plugin:import/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -23,15 +25,35 @@ module.exports = {
     'i18next',
     'react-hooks',
     'zavalition-fsd',
+    'unused-imports',
+    'import',
   ],
   rules: {
     'linebreak-style': 0,
     'react/jsx-indent': [2, 2],
     'react/jsx-indent-props': [2, 2],
+    'unused-imports/no-unused-imports': 'error',
     indent: [2, 2],
     'react/jsx-filename-extension': [
       2,
       { extensions: ['.js', '.jsx', '.tsx'] },
+    ],
+    'import/order': [
+      'error',
+      {
+        pathGroups: [
+          {
+            pattern: './**.module.*',
+            group: 'internal',
+            position: 'after',
+          },
+        ],
+        'newlines-between': 'always',
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: false,
+        },
+      },
     ],
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',

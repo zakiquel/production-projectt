@@ -1,8 +1,10 @@
-import { Country } from '@/entities/Country';
-import { TestAsyncThunk } from '@/shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
-import { Profile } from '@/entities/Profile';
 import { ValidateProfileErrors } from '../../consts/cardConsts';
+
 import { updateProfileData } from './updateProfileData';
+
+import { Country } from '@/entities/Country';
+import { Profile } from '@/entities/Profile';
+import { TestAsyncThunk } from '@/shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
 
 const formData: Profile = {
   id: '1',

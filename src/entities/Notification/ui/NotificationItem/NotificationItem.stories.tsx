@@ -1,6 +1,8 @@
-import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
+import React from 'react';
+
 import { Notification } from '../../model/types/notification';
+
 import { NotificationItem } from './NotificationItem';
 
 export default {

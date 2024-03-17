@@ -1,8 +1,10 @@
-import { Country } from '@/entities/Country';
-import { Profile } from '@/entities/Profile';
-import { Currency } from '@/entities/Currency';
 import { ValidateProfileErrors } from '../../consts/cardConsts';
+
 import { validateProfileData } from './validateProfileData';
+
+import { Country } from '@/entities/Country';
+import { Currency } from '@/entities/Currency';
+import { Profile } from '@/entities/Profile';
 
 const profileData: Profile = {
   username: 'kirillzav',
