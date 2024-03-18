@@ -3,6 +3,8 @@ import React from 'react';
 
 import { ArticleTypeTabs } from './ArticleTypeTabs';
 
+import { ArticleType } from '@/entities/Article';
+
 export default {
   title: 'entities/Article/ArticleTypeTabs',
   component: ArticleTypeTabs,
@@ -14,4 +16,6 @@ export default {
 const Template: ComponentStory<typeof ArticleTypeTabs> = (args) => <ArticleTypeTabs {...args} />;
 
 export const Normal = Template.bind({});
-Normal.args = {};
+Normal.args = {
+  value: ArticleType.CYBERSECURITY,
+};
