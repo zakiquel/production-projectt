@@ -4,7 +4,7 @@ import { Notification } from '../../model/types/notification';
 
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Card, CardTheme } from '@/shared/ui/Card/Card';
-import { Text } from '@/shared/ui/Text/Text';
+import { Text } from '@/shared/ui/Text';
 
 import cls from './NotificationItem.module.scss';
 

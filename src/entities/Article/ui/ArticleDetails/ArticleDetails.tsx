@@ -24,7 +24,7 @@ import { Avatar } from '@/shared/ui/Avatar/Avatar';
 import { Icon } from '@/shared/ui/Icon/Icon';
 import { Skeleton } from '@/shared/ui/Skeleton/Skeleton';
 import { HStack, VStack } from '@/shared/ui/Stack';
-import { TextAlign, TextSize, Text } from '@/shared/ui/Text/Text';
+import { Text, TextAlign, TextSize } from '@/shared/ui/Text';
 
 import cls from './ArticleDetails.module.scss';
 

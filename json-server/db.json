@@ -760,6 +760,18 @@
       "articleId": "16",
       "userId": "1",
       "id": 5
+    },
+    {
+      "text": "вывы",
+      "articleId": "7",
+      "userId": "1",
+      "id": 6
+    },
+    {
+      "text": "Хорошая статья!",
+      "articleId": "4",
+      "userId": "1",
+      "id": 7
     }
   ],
   "users": [
@@ -800,7 +812,7 @@
       "currency": "RUB",
       "country": "Belarus",
       "city": "Tomsk",
-      "username": "shpalazwer",
+      "username": "zakiquel",
       "avatar": "https://clck.ru/36jJ25"
     },
     {

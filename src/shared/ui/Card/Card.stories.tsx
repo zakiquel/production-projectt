@@ -1,7 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
 
-import { Text } from '../Text/Text';
+import { Text } from '../Text';
 
 import { Card } from './Card';
 
