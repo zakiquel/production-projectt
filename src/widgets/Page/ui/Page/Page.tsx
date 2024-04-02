@@ -58,6 +58,7 @@ export const Page = (props: PageProps) => {
       ref={wrapperRef}
       onScroll={onScroll}
       id={PAGE_ID}
+      /* eslint-disable-next-line react/destructuring-assignment */
       data-testid={props['data-testid'] ?? 'Page'}
     >
       {children}
