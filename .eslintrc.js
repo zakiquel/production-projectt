@@ -8,8 +8,6 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
     'plugin:i18next/recommended',
-    'eslint:recommended',
-    'plugin:import/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -38,26 +36,9 @@ module.exports = {
       2,
       { extensions: ['.js', '.jsx', '.tsx'] },
     ],
-    'import/order': [
-      'error',
-      {
-        pathGroups: [
-          {
-            pattern: './**.module.*',
-            group: 'internal',
-            position: 'after',
-          },
-        ],
-        'newlines-between': 'always',
-        alphabetize: {
-          order: 'asc',
-          caseInsensitive: false,
-        },
-      },
-    ],
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
-    'no-unused-vars': 'warn',
+    'no-unused-vars': 'off',
     'react/require-default-props': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/jsx-props-no-spreading': 'warn',
@@ -70,7 +51,18 @@ module.exports = {
       'error',
       {
         markupOnly: true,
-        ignoreAttribute: ['data-testid', 'to', 'target', 'justify', 'align', 'direction', 'gap', 'role', 'as', 'border'],
+        ignoreAttribute: [
+          'data-testid',
+          'to',
+          'target',
+          'justify',
+          'align',
+          'direction',
+          'gap',
+          'role',
+          'as',
+          'border',
+        ],
       },
     ],
     'max-len': ['error', { ignoreComments: true, code: 130 }],
@@ -94,6 +86,23 @@ module.exports = {
       {
         alias: '@',
         testFilesPatterns: ['**/*.test.*', '**/*.stories.*', '**/StoreDecorator.tsx'],
+      },
+    ],
+    'import/order': [
+      'error',
+      {
+        pathGroups: [
+          {
+            pattern: './**.module.*',
+            group: 'internal',
+            position: 'after',
+          },
+        ],
+        'newlines-between': 'always',
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: false,
+        },
       },
     ],
   },

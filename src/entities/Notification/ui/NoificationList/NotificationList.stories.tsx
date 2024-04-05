@@ -1,6 +1,5 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
-import withMock from 'storybook-addon-mock';
 
 import { NotificationList } from './NotificationList';
 
@@ -12,7 +11,35 @@ export default {
   argTypes: {
     backgroundColor: { control: 'color' },
   },
-  decorators: [withMock],
+  parameters: {
+    mockData: [
+      {
+        url: `${__API__}/notifications`,
+        method: 'GET',
+        status: 200,
+        response: [
+          {
+            id: '1',
+            title: 'notification title',
+            description: 'notification description',
+            userId: '1',
+          },
+          {
+            id: '2',
+            title: 'notification title',
+            description: 'notification description',
+            userId: '1',
+          },
+          {
+            id: '3',
+            title: 'notification title',
+            description: 'notification description',
+            userId: '1',
+          },
+        ],
+      },
+    ],
+  },
 } as ComponentMeta<typeof NotificationList>;
 
 const Template: ComponentStory<typeof NotificationList> = (args) => <NotificationList {...args} />;
@@ -20,32 +47,3 @@ const Template: ComponentStory<typeof NotificationList> = (args) => <Notificatio
 export const Normal = Template.bind({});
 Normal.args = {};
 Normal.decorators = [StoreDecorator({})];
-Normal.parameters = {
-  mockData: [
-    {
-      url: `${__API__}/notifications`,
-      method: 'GET',
-      status: 200,
-      response: [
-        {
-          id: '1',
-          title: 'notification title',
-          description: 'notification description',
-          userId: '1',
-        },
-        {
-          id: '2',
-          title: 'notification title',
-          description: 'notification description',
-          userId: '1',
-        },
-        {
-          id: '3',
-          title: 'notification title',
-          description: 'notification description',
-          userId: '1',
-        },
-      ],
-    },
-  ],
-};
