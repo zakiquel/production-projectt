@@ -801,6 +801,15 @@
         "MANAGER"
       ],
       "avatar": "https://clck.ru/36nvwp"
+    },
+    {
+      "id": "4",
+      "username": "testuser",
+      "password": "123",
+      "role": [
+        "ADMIN"
+      ],
+      "avatar": "https://clck.ru/36nvwp"
     }
   ],
   "profile": [
