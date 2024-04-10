@@ -728,45 +728,35 @@
           "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
         }
       ]
+    },
+    {
+      "title": "Javascript news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://pluspng.com/img-png/scala-logo-png-scala-logo-1200x675.png",
+      "views": 1022,
+      "createdAt": "26.04.2022",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [],
+      "id": "pq0txlK"
+    },
+    {
+      "title": "TEST ARTICLE",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://pluspng.com/img-png/scala-logo-png-scala-logo-1200x675.png",
+      "views": 1022,
+      "createdAt": "26.04.2022",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [],
+      "id": "kyJFjBq"
     }
   ],
   "comments": [
-    {
-      "text": "dasdasd",
-      "articleId": "16",
-      "userId": "1",
-      "id": 1
-    },
-    {
-      "text": "das ddas",
-      "articleId": "16",
-      "userId": "1",
-      "id": 2
-    },
-    {
-      "text": "3213",
-      "articleId": "10",
-      "userId": "1",
-      "id": 3
-    },
-    {
-      "text": "fdasfds",
-      "articleId": "10",
-      "userId": "1",
-      "id": 4
-    },
-    {
-      "text": "31",
-      "articleId": "16",
-      "userId": "1",
-      "id": 5
-    },
-    {
-      "text": "вывы",
-      "articleId": "7",
-      "userId": "1",
-      "id": 6
-    },
     {
       "text": "Хорошая статья!",
       "articleId": "4",
@@ -833,6 +823,17 @@
       "country": "Russia",
       "city": "Tomsk",
       "username": "pewqq",
+      "avatar": "https://clck.ru/36nvwp"
+    },
+    {
+      "id": "4",
+      "first": "user",
+      "lastname": "test",
+      "age": 22,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Tomsk",
+      "username": "testuser",
       "avatar": "https://clck.ru/36nvwp"
     }
   ],

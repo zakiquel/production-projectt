@@ -1,10 +1,10 @@
-import { selectByTestId } from '../../helpers/selectByTestId';
+import { getByTestId } from '../../support/commands/common';
 
 describe('Роутинг', () => {
   beforeEach(() => {
     it('Переход на главную страницу', () => {
       cy.visit('/');
-      cy.get(selectByTestId('MainPage')).should('exist');
+      getByTestId('MainPage').should('exist');
     });
   });
 
@@ -15,22 +15,22 @@ describe('Роутинг', () => {
 
     it('Переход на страницу профиля', () => {
       cy.visit('/profile/1');
-      cy.get(selectByTestId('ProfilePage')).should('exist');
+      getByTestId('ProfilePage').should('exist');
     });
     it('Переход на страницу со статьями', () => {
       cy.visit('/articles');
-      cy.get(selectByTestId('ArticlesPage')).should('exist');
+      getByTestId('ArticlesPage').should('exist');
     });
   });
 
   describe('Пользователь неавторизован', () => {
     it('Переход на страницу профиля', () => {
       cy.visit('/profile/1');
-      cy.get(selectByTestId('MainPage')).should('exist');
+      getByTestId('MainPage').should('exist');
     });
     it('Переход на несуществующий маршрут', () => {
       cy.visit('/qwe32trwe123');
-      cy.get(selectByTestId('NotFoundPage')).should('exist');
+      getByTestId('NotFoundPage').should('exist');
     });
   });
 });

@@ -13,7 +13,7 @@ export const loginByUsername = createAsyncThunk<
   LoginByUsernameProps,
   ThunkConfig<string>
 >(
-  'login/loginByUsername',
+  'common/loginByUsername',
   async (authData, thunkAPI) => {
     const {
       extra,
