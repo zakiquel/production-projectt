@@ -1,0 +1,390 @@
+[
+  {
+    "id": "16",
+    "title": "E-commerce Platform Optimization",
+    "subtitle": "Boosting performance and user experience",
+    "img": "https://wittysparks.com/wp-content/uploads/2019/05/ecommerce-platform-optimization-1536x937.jpg",
+    "views": 2800,
+    "createdAt": "03.03.2022",
+    "userId": "1",
+    "type": [
+      "WEB"
+    ],
+    "blocks": [
+      {
+        "id": "1",
+        "type": "TEXT",
+        "title": "Overview",
+        "paragraphs": [
+          "In the competitive world of e-commerce, optimizing your online platform is crucial for success.",
+          "This article provides insights into e-commerce platform optimization, covering aspects such as website speed, mobile responsiveness, and implementing secure payment gateways to enhance the overall user experience."
+        ]
+      },
+      {
+        "id": "2",
+        "type": "IMAGE",
+        "src": "https://fs.hubspotusercontent00.net/hubfs/481308/guy%20holding%20mobile%20device.jpg",
+        "title": "Mobile Responsiveness"
+      },
+      {
+        "id": "3",
+        "type": "CODE",
+        "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
+      }
+    ],
+    "user": {
+      "id": "1",
+      "username": "admin",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://clck.ru/36jJ25"
+    }
+  },
+  {
+    "id": "17",
+    "title": "E-commerce Platform Optimization",
+    "subtitle": "Boosting performance and user experience",
+    "img": "https://wittysparks.com/wp-content/uploads/2019/05/ecommerce-platform-optimization-1536x937.jpg",
+    "views": 2800,
+    "createdAt": "03.03.2022",
+    "userId": "1",
+    "type": [
+      "WEB"
+    ],
+    "blocks": [
+      {
+        "id": "1",
+        "type": "TEXT",
+        "title": "Overview",
+        "paragraphs": [
+          "In the competitive world of e-commerce, optimizing your online platform is crucial for success.",
+          "This article provides insights into e-commerce platform optimization, covering aspects such as website speed, mobile responsiveness, and implementing secure payment gateways to enhance the overall user experience."
+        ]
+      },
+      {
+        "id": "2",
+        "type": "IMAGE",
+        "src": "https://fs.hubspotusercontent00.net/hubfs/481308/guy%20holding%20mobile%20device.jpg",
+        "title": "Mobile Responsiveness"
+      },
+      {
+        "id": "3",
+        "type": "CODE",
+        "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
+      }
+    ],
+    "user": {
+      "id": "1",
+      "username": "admin",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://clck.ru/36jJ25"
+    }
+  },
+  {
+    "id": "18",
+    "title": "E-commerce Platform Optimization",
+    "subtitle": "Boosting performance and user experience",
+    "img": "https://wittysparks.com/wp-content/uploads/2019/05/ecommerce-platform-optimization-1536x937.jpg",
+    "views": 2800,
+    "createdAt": "03.03.2022",
+    "userId": "1",
+    "type": [
+      "WEB"
+    ],
+    "blocks": [
+      {
+        "id": "1",
+        "type": "TEXT",
+        "title": "Overview",
+        "paragraphs": [
+          "In the competitive world of e-commerce, optimizing your online platform is crucial for success.",
+          "This article provides insights into e-commerce platform optimization, covering aspects such as website speed, mobile responsiveness, and implementing secure payment gateways to enhance the overall user experience."
+        ]
+      },
+      {
+        "id": "2",
+        "type": "IMAGE",
+        "src": "https://fs.hubspotusercontent00.net/hubfs/481308/guy%20holding%20mobile%20device.jpg",
+        "title": "Mobile Responsiveness"
+      },
+      {
+        "id": "3",
+        "type": "CODE",
+        "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
+      }
+    ],
+    "user": {
+      "id": "1",
+      "username": "admin",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://clck.ru/36jJ25"
+    }
+  },
+  {
+    "id": "19",
+    "title": "E-commerce Platform Optimization",
+    "subtitle": "Boosting performance and user experience",
+    "img": "https://wittysparks.com/wp-content/uploads/2019/05/ecommerce-platform-optimization-1536x937.jpg",
+    "views": 2800,
+    "createdAt": "03.03.2022",
+    "userId": "1",
+    "type": [
+      "WEB"
+    ],
+    "blocks": [
+      {
+        "id": "1",
+        "type": "TEXT",
+        "title": "Overview",
+        "paragraphs": [
+          "In the competitive world of e-commerce, optimizing your online platform is crucial for success.",
+          "This article provides insights into e-commerce platform optimization, covering aspects such as website speed, mobile responsiveness, and implementing secure payment gateways to enhance the overall user experience."
+        ]
+      },
+      {
+        "id": "2",
+        "type": "IMAGE",
+        "src": "https://fs.hubspotusercontent00.net/hubfs/481308/guy%20holding%20mobile%20device.jpg",
+        "title": "Mobile Responsiveness"
+      },
+      {
+        "id": "3",
+        "type": "CODE",
+        "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
+      }
+    ],
+    "user": {
+      "id": "1",
+      "username": "admin",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://clck.ru/36jJ25"
+    }
+  },
+  {
+    "id": "20",
+    "title": "E-commerce Platform Optimization",
+    "subtitle": "Boosting performance and user experience",
+    "img": "https://wittysparks.com/wp-content/uploads/2019/05/ecommerce-platform-optimization-1536x937.jpg",
+    "views": 2800,
+    "createdAt": "03.03.2022",
+    "userId": "1",
+    "type": [
+      "WEB"
+    ],
+    "blocks": [
+      {
+        "id": "1",
+        "type": "TEXT",
+        "title": "Overview",
+        "paragraphs": [
+          "In the competitive world of e-commerce, optimizing your online platform is crucial for success.",
+          "This article provides insights into e-commerce platform optimization, covering aspects such as website speed, mobile responsiveness, and implementing secure payment gateways to enhance the overall user experience."
+        ]
+      },
+      {
+        "id": "2",
+        "type": "IMAGE",
+        "src": "https://fs.hubspotusercontent00.net/hubfs/481308/guy%20holding%20mobile%20device.jpg",
+        "title": "Mobile Responsiveness"
+      },
+      {
+        "id": "3",
+        "type": "CODE",
+        "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
+      }
+    ],
+    "user": {
+      "id": "1",
+      "username": "admin",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://clck.ru/36jJ25"
+    }
+  },
+  {
+    "id": "21",
+    "title": "E-commerce Platform Optimization",
+    "subtitle": "Boosting performance and user experience",
+    "img": "https://wittysparks.com/wp-content/uploads/2019/05/ecommerce-platform-optimization-1536x937.jpg",
+    "views": 2800,
+    "createdAt": "03.03.2022",
+    "userId": "1",
+    "type": [
+      "WEB"
+    ],
+    "blocks": [
+      {
+        "id": "1",
+        "type": "TEXT",
+        "title": "Overview",
+        "paragraphs": [
+          "In the competitive world of e-commerce, optimizing your online platform is crucial for success.",
+          "This article provides insights into e-commerce platform optimization, covering aspects such as website speed, mobile responsiveness, and implementing secure payment gateways to enhance the overall user experience."
+        ]
+      },
+      {
+        "id": "2",
+        "type": "IMAGE",
+        "src": "https://fs.hubspotusercontent00.net/hubfs/481308/guy%20holding%20mobile%20device.jpg",
+        "title": "Mobile Responsiveness"
+      },
+      {
+        "id": "3",
+        "type": "CODE",
+        "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
+      }
+    ],
+    "user": {
+      "id": "1",
+      "username": "admin",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://clck.ru/36jJ25"
+    }
+  },
+  {
+    "id": "11",
+    "title": "Mobile App Development Tips",
+    "subtitle": "Key insights for building successful mobile apps",
+    "img": "https://positiwise.com/blog/wp-content/uploads/2023/04/tips-and-ticks-to-build-successful-mobile-app-1.jpg",
+    "views": 1800,
+    "createdAt": "05.11.2022",
+    "userId": "1",
+    "type": [
+      "MOBILE"
+    ],
+    "blocks": [
+      {
+        "id": "1",
+        "type": "TEXT",
+        "title": "Introduction",
+        "paragraphs": [
+          "With the increasing demand for mobile apps, developers need to stay informed about the best practices and tips for successful mobile app development.",
+          "In this article, we'll discuss key insights, such as the importance of responsive design, optimizing for performance, and leveraging push notifications."
+        ]
+      },
+      {
+        "id": "2",
+        "type": "IMAGE",
+        "src": "https://public-images.interaction-design.org/literature/articles/materials/flTR2AEh0Xm8QMKevDdSR4x08XS9oDCs2FrMxpjj.jpg",
+        "title": "Responsive Design"
+      },
+      {
+        "id": "3",
+        "type": "CODE",
+        "code": "// Example code for push notification\nconst push = require('push-notification-library');\npush.send('Hello, your app is awesome!', 'User123');"
+      }
+    ],
+    "user": {
+      "id": "1",
+      "username": "admin",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://clck.ru/36jJ25"
+    }
+  },
+  {
+    "id": "14",
+    "title": "Blockchain and Cryptocurrency Trends",
+    "subtitle": "Exploring the latest developments in blockchain",
+    "img": "https://www.cryptopolitan.com/wp-content/uploads/2023/01/Top-7-blockchain-and-cryptocurrency-trends-in-2023-copy.png",
+    "views": 4200,
+    "createdAt": "08.07.2022",
+    "userId": "1",
+    "type": [
+      "Blockchain",
+      "Cryptocurrency"
+    ],
+    "blocks": [
+      {
+        "id": "1",
+        "type": "TEXT",
+        "title": "Overview",
+        "paragraphs": [
+          "Blockchain technology and cryptocurrencies continue to reshape various industries.",
+          "This article delves into the latest trends and developments in blockchain, covering topics such as decentralized finance (DeFi), non-fungible tokens (NFTs), and the integration of blockchain in supply chain management."
+        ]
+      },
+      {
+        "id": "2",
+        "type": "IMAGE",
+        "src": "https://dsb.edu.in/wp-content/uploads/2023/08/Understanding-DeFi-The-New-Way-of-Finance.jpg",
+        "title": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "3",
+        "type": "CODE",
+        "code": "// Example code for NFT smart contract\nconst nft = require('nft-contract-library');\nnft.deploySmartContract('User123');"
+      }
+    ],
+    "user": {
+      "id": "1",
+      "username": "admin",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://clck.ru/36jJ25"
+    }
+  },
+  {
+    "id": "10",
+    "title": "Data Science Tools Overview",
+    "subtitle": "Exploring the latest tools in Data Science",
+    "img": "https://datasciencedojo.com/wp-content/uploads/7-data-science-tools-1030x1030.png",
+    "views": 2400,
+    "createdAt": "10.08.2022",
+    "userId": "1",
+    "type": [
+      "SCIENCE"
+    ],
+    "blocks": [
+      {
+        "id": "1",
+        "type": "TEXT",
+        "title": "Overview",
+        "paragraphs": [
+          "The field of data science continues to grow, and new tools are constantly emerging to facilitate data analysis and machine learning.",
+          "In this article, we'll explore some of the latest and most promising data science tools, including Jupyter Notebooks, TensorFlow, and PyTorch."
+        ]
+      },
+      {
+        "id": "2",
+        "type": "CODE",
+        "code": "import pandas as pd\nimport numpy as np\n# Data analysis with pandas and numpy"
+      },
+      {
+        "id": "3",
+        "type": "IMAGE",
+        "src": "https://datasciencepartners.nl/wp-content/uploads/2019/06/wat-is-jupyter-notebook.png",
+        "title": "Jupyter Notebooks"
+      }
+    ],
+    "user": {
+      "id": "1",
+      "username": "admin",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://clck.ru/36jJ25"
+    }
+  }
+]

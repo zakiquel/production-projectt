@@ -1,0 +1,11 @@
+{
+  "id": "1",
+  "first": "user",
+  "lastname": "test",
+  "age": 22,
+  "currency": "RUB",
+  "country": "Russia",
+  "city": "Tomsk",
+  "username": "testuser",
+  "avatar": "https://clck.ru/36nvwp"
+}

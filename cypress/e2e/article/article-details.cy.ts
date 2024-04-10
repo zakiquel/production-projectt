@@ -17,6 +17,11 @@ describe('Переход на страницу статьи', () => {
     cy.getByTestId('ArticleDetails.Info').should('exist');
   });
 
+  it('Содержимое статьи отображается(stubbed)', () => {
+    cy.intercept('GET', '**/articles?*', { fixture: 'articles.json' });
+    cy.getByTestId('ArticleDetails.Info').should('exist');
+  });
+
   it('Список рекомендаций отображается', () => {
     cy.getByTestId('ArticleRecommendations').should('exist');
   });
@@ -29,6 +34,7 @@ describe('Переход на страницу статьи', () => {
   });
 
   it('Оценка статьи работает', () => {
+    cy.intercept('GET', '**/articles/*', { fixture: 'article-details.json' });
     cy.getByTestId('ArticleDetails.Info');
     cy.getByTestId('RatingCard').scrollIntoView();
     cy.setRate(5, 'feedback');

@@ -1,0 +1,43 @@
+{
+  "id": "1",
+  "title": "Data Science Tools Overview",
+  "subtitle": "Exploring the latest tools in Data Science",
+  "img": "https://datasciencedojo.com/wp-content/uploads/7-data-science-tools-1030x1030.png",
+  "views": 2400,
+  "createdAt": "10.08.2022",
+  "userId": "1",
+  "type": [
+    "SCIENCE"
+  ],
+  "blocks": [
+    {
+      "id": "1",
+      "type": "TEXT",
+      "title": "Overview",
+      "paragraphs": [
+        "The field of data science continues to grow, and new tools are constantly emerging to facilitate data analysis and machine learning.",
+        "In this article, we'll explore some of the latest and most promising data science tools, including Jupyter Notebooks, TensorFlow, and PyTorch."
+      ]
+    },
+    {
+      "id": "2",
+      "type": "CODE",
+      "code": "import pandas as pd\nimport numpy as np\n# Data analysis with pandas and numpy"
+    },
+    {
+      "id": "3",
+      "type": "IMAGE",
+      "src": "https://datasciencepartners.nl/wp-content/uploads/2019/06/wat-is-jupyter-notebook.png",
+      "title": "Jupyter Notebooks"
+    }
+  ],
+  "user": {
+    "id": "1",
+    "username": "admin",
+    "password": "123",
+    "roles": [
+      "ADMIN"
+    ],
+    "avatar": "https://clck.ru/36jJ25"
+  }
+}
