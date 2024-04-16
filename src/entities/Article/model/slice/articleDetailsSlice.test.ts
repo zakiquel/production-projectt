@@ -1,9 +1,7 @@
 import { ArticleType, ArticleBlockType } from '../consts/articleConsts';
 import { fetchArticleById } from '../services/fetchArticleById/fetchArticleById';
 import { ArticleDetailsSchema } from '../types/ArticleDetailsSchema';
-import {
-  Article,
-} from '../types/article';
+import { Article } from '../types/article';
 
 import { articleDetailsReducer } from './articleDetailsSlice';
 
@@ -24,9 +22,7 @@ const data: Article = {
       id: '1',
       type: ArticleBlockType.TEXT,
       title: 'block title',
-      paragraphs: [
-        'paragraph',
-      ],
+      paragraphs: ['paragraph'],
     },
   ],
 };
@@ -36,10 +32,12 @@ describe('articleSlice.test', () => {
       isLoading: false,
       error: 'error',
     };
-    expect(articleDetailsReducer(
-      state as ArticleDetailsSchema,
-      fetchArticleById.pending,
-    )).toEqual({
+    expect(
+      articleDetailsReducer(
+        state as ArticleDetailsSchema,
+        fetchArticleById.pending,
+      ),
+    ).toEqual({
       isLoading: true,
       error: undefined,
     });
@@ -52,10 +50,12 @@ describe('articleSlice.test', () => {
         title: 'subtitle',
       },
     };
-    expect(articleDetailsReducer(
-      state as ArticleDetailsSchema,
-      fetchArticleById.fulfilled(data, '', ''),
-    )).toEqual({
+    expect(
+      articleDetailsReducer(
+        state as ArticleDetailsSchema,
+        fetchArticleById.fulfilled(data, '', ''),
+      ),
+    ).toEqual({
       isLoading: false,
       data,
     });
@@ -65,10 +65,12 @@ describe('articleSlice.test', () => {
       isLoading: true,
       error: undefined,
     };
-    expect(articleDetailsReducer(
-      state as ArticleDetailsSchema,
-      fetchArticleById.rejected,
-    )).toEqual({
+    expect(
+      articleDetailsReducer(
+        state as ArticleDetailsSchema,
+        fetchArticleById.rejected,
+      ),
+    ).toEqual({
       isLoading: false,
       error: undefined,
     });

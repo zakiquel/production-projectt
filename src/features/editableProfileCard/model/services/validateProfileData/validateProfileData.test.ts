@@ -22,26 +22,30 @@ describe('validateProfileData.test', () => {
 
   test('incorrect age', async () => {
     // @ts-ignore
-    expect(validateProfileData({ ...profileData, age: 'abc' }))
-      .toEqual([ValidateProfileErrors.INCORRECT_AGE]);
+    expect(validateProfileData({ ...profileData, age: 'abc' })).toEqual([
+      ValidateProfileErrors.INCORRECT_AGE,
+    ]);
   });
 
   test('incorrect user data', async () => {
     // @ts-ignore
-    expect(validateProfileData({ ...profileData, first: '', lastname: '' }))
-      .toEqual([ValidateProfileErrors.INCORRECT_USER_DATA]);
+    expect(
+      validateProfileData({ ...profileData, first: '', lastname: '' }),
+    ).toEqual([ValidateProfileErrors.INCORRECT_USER_DATA]);
   });
 
   test('incorrect country', async () => {
     // @ts-ignore
-    expect(validateProfileData({ ...profileData, country: 'Austria' }))
-      .toEqual([ValidateProfileErrors.INCORRECT_COUNTRY]);
+    expect(validateProfileData({ ...profileData, country: 'Austria' })).toEqual(
+      [ValidateProfileErrors.INCORRECT_COUNTRY],
+    );
   });
 
   test('incorrect city', async () => {
     // @ts-ignore
-    expect(validateProfileData({ ...profileData, city: '' }))
-      .toEqual([ValidateProfileErrors.INCORRECT_CITY]);
+    expect(validateProfileData({ ...profileData, city: '' })).toEqual([
+      ValidateProfileErrors.INCORRECT_CITY,
+    ]);
   });
 
   test('no data', async () => {
@@ -50,10 +54,18 @@ describe('validateProfileData.test', () => {
   });
 
   test('incorrect all', async () => {
-    expect(validateProfileData({
-      // @ts-ignore
-      username: '', first: '', lastname: '', age: '123', country: 'Astana', city: '',
-    })).toEqual([
+    expect(
+      validateProfileData({
+        username: '',
+        first: '',
+        lastname: '',
+        // @ts-ignore
+        age: '123',
+        // @ts-ignore
+        country: 'Astana',
+        city: '',
+      }),
+    ).toEqual([
       ValidateProfileErrors.INCORRECT_USER_DATA,
       ValidateProfileErrors.INCORRECT_AGE,
       ValidateProfileErrors.INCORRECT_COUNTRY,

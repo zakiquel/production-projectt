@@ -7,9 +7,7 @@
     "views": 2800,
     "createdAt": "03.03.2022",
     "userId": "1",
-    "type": [
-      "WEB"
-    ],
+    "type": ["WEB"],
     "blocks": [
       {
         "id": "1",
@@ -36,9 +34,7 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "roles": [
-        "ADMIN"
-      ],
+      "roles": ["ADMIN"],
       "avatar": "https://clck.ru/36jJ25"
     }
   },
@@ -50,9 +46,7 @@
     "views": 2800,
     "createdAt": "03.03.2022",
     "userId": "1",
-    "type": [
-      "WEB"
-    ],
+    "type": ["WEB"],
     "blocks": [
       {
         "id": "1",
@@ -79,9 +73,7 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "roles": [
-        "ADMIN"
-      ],
+      "roles": ["ADMIN"],
       "avatar": "https://clck.ru/36jJ25"
     }
   },
@@ -93,9 +85,7 @@
     "views": 2800,
     "createdAt": "03.03.2022",
     "userId": "1",
-    "type": [
-      "WEB"
-    ],
+    "type": ["WEB"],
     "blocks": [
       {
         "id": "1",
@@ -122,9 +112,7 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "roles": [
-        "ADMIN"
-      ],
+      "roles": ["ADMIN"],
       "avatar": "https://clck.ru/36jJ25"
     }
   },
@@ -136,9 +124,7 @@
     "views": 2800,
     "createdAt": "03.03.2022",
     "userId": "1",
-    "type": [
-      "WEB"
-    ],
+    "type": ["WEB"],
     "blocks": [
       {
         "id": "1",
@@ -165,9 +151,7 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "roles": [
-        "ADMIN"
-      ],
+      "roles": ["ADMIN"],
       "avatar": "https://clck.ru/36jJ25"
     }
   },
@@ -179,9 +163,7 @@
     "views": 2800,
     "createdAt": "03.03.2022",
     "userId": "1",
-    "type": [
-      "WEB"
-    ],
+    "type": ["WEB"],
     "blocks": [
       {
         "id": "1",
@@ -208,9 +190,7 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "roles": [
-        "ADMIN"
-      ],
+      "roles": ["ADMIN"],
       "avatar": "https://clck.ru/36jJ25"
     }
   },
@@ -222,9 +202,7 @@
     "views": 2800,
     "createdAt": "03.03.2022",
     "userId": "1",
-    "type": [
-      "WEB"
-    ],
+    "type": ["WEB"],
     "blocks": [
       {
         "id": "1",
@@ -251,9 +229,7 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "roles": [
-        "ADMIN"
-      ],
+      "roles": ["ADMIN"],
       "avatar": "https://clck.ru/36jJ25"
     }
   },
@@ -265,9 +241,7 @@
     "views": 1800,
     "createdAt": "05.11.2022",
     "userId": "1",
-    "type": [
-      "MOBILE"
-    ],
+    "type": ["MOBILE"],
     "blocks": [
       {
         "id": "1",
@@ -294,9 +268,7 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "roles": [
-        "ADMIN"
-      ],
+      "roles": ["ADMIN"],
       "avatar": "https://clck.ru/36jJ25"
     }
   },
@@ -308,10 +280,7 @@
     "views": 4200,
     "createdAt": "08.07.2022",
     "userId": "1",
-    "type": [
-      "Blockchain",
-      "Cryptocurrency"
-    ],
+    "type": ["Blockchain", "Cryptocurrency"],
     "blocks": [
       {
         "id": "1",
@@ -338,9 +307,7 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "roles": [
-        "ADMIN"
-      ],
+      "roles": ["ADMIN"],
       "avatar": "https://clck.ru/36jJ25"
     }
   },
@@ -352,9 +319,7 @@
     "views": 2400,
     "createdAt": "10.08.2022",
     "userId": "1",
-    "type": [
-      "SCIENCE"
-    ],
+    "type": ["SCIENCE"],
     "blocks": [
       {
         "id": "1",
@@ -381,9 +346,7 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "roles": [
-        "ADMIN"
-      ],
+      "roles": ["ADMIN"],
       "avatar": "https://clck.ru/36jJ25"
     }
   }

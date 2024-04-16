@@ -6,9 +6,7 @@
   "views": 2400,
   "createdAt": "10.08.2022",
   "userId": "1",
-  "type": [
-    "SCIENCE"
-  ],
+  "type": ["SCIENCE"],
   "blocks": [
     {
       "id": "1",
@@ -35,9 +33,7 @@
     "id": "1",
     "username": "admin",
     "password": "123",
-    "roles": [
-      "ADMIN"
-    ],
+    "roles": ["ADMIN"],
     "avatar": "https://clck.ru/36jJ25"
   }
 }

@@ -37,14 +37,17 @@ export const RatingCard = memo((props: RatingCardProps) => {
   const [starsCount, setStarsCount] = useState(rate);
   const [feedback, setFeedback] = useState('');
 
-  const onSelectStars = useCallback((selectedStarsCount: number) => {
-    setStarsCount(selectedStarsCount);
-    if (hasFeedback) {
-      setIsModalOpen(true);
-    } else {
-      onAccept?.(selectedStarsCount);
-    }
-  }, [hasFeedback, onAccept]);
+  const onSelectStars = useCallback(
+    (selectedStarsCount: number) => {
+      setStarsCount(selectedStarsCount);
+      if (hasFeedback) {
+        setIsModalOpen(true);
+      } else {
+        onAccept?.(selectedStarsCount);
+      }
+    },
+    [hasFeedback, onAccept],
+  );
 
   const acceptHandle = useCallback(() => {
     setIsModalOpen(false);
@@ -58,9 +61,7 @@ export const RatingCard = memo((props: RatingCardProps) => {
 
   const modalContent = (
     <>
-      <Text
-        title={feedbackTitle}
-      />
+      <Text title={feedbackTitle} />
       <Input
         value={feedback}
         onChange={setFeedback}
@@ -73,18 +74,18 @@ export const RatingCard = memo((props: RatingCardProps) => {
   const isDeviceMobile = useDevice();
 
   return (
-    <Card
-      data-testid="RatingCard"
-      className={className}
-      max
-    >
+    <Card data-testid="RatingCard" className={className} max>
       <VStack align="center" gap="8" max>
         {rate ? (
           <Text title={t('Спасибо за оценку!')} />
         ) : (
           <Text title={title} />
         )}
-        <StarRating selectedStars={starsCount} size={40} onSelect={onSelectStars} />
+        <StarRating
+          selectedStars={starsCount}
+          size={40}
+          onSelect={onSelectStars}
+        />
       </VStack>
       {isDeviceMobile ? (
         <Drawer isOpen={isModalOpen} lazy onClose={cancelHandle}>
@@ -95,32 +96,25 @@ export const RatingCard = memo((props: RatingCardProps) => {
             </Button>
           </VStack>
         </Drawer>
-      )
-        : (
-          <Modal
-            isOpen={isModalOpen}
-            lazy
-          >
-            <VStack max gap="32">
-              {modalContent}
-              <HStack gap="8" max justify="end">
-                <Button
-                  data-testid="RatingCard.Close"
-                  theme={ButtonTheme.OUTLINE_RED}
-                  onClick={cancelHandle}
-                >
-                  {t('Закрыть')}
-                </Button>
-                <Button
-                  data-testid="RatingCard.Send"
-                  onClick={acceptHandle}
-                >
-                  {t('Отправить')}
-                </Button>
-              </HStack>
-            </VStack>
-          </Modal>
-        )}
+      ) : (
+        <Modal isOpen={isModalOpen} lazy>
+          <VStack max gap="32">
+            {modalContent}
+            <HStack gap="8" max justify="end">
+              <Button
+                data-testid="RatingCard.Close"
+                theme={ButtonTheme.OUTLINE_RED}
+                onClick={cancelHandle}
+              >
+                {t('Закрыть')}
+              </Button>
+              <Button data-testid="RatingCard.Send" onClick={acceptHandle}>
+                {t('Отправить')}
+              </Button>
+            </HStack>
+          </VStack>
+        </Modal>
+      )}
     </Card>
   );
 });

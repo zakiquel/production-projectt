@@ -4,7 +4,10 @@ import AppRouter from './AppRouter';
 
 import { UserRole } from '@/entities/User';
 import {
-  getRouteAbout, getRouteAdminPanel, getRouteArticles, getRouteProfile,
+  getRouteAbout,
+  getRouteAdminPanel,
+  getRouteArticles,
+  getRouteProfile,
 } from '@/shared/const/router';
 import { componentRender } from '@/shared/lib/tests/componentRender/componentRender';
 

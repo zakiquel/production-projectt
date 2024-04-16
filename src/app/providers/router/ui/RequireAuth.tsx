@@ -18,10 +18,10 @@ export function RequireAuth({ children, roles }: RequireAuthProps) {
   const hasRequiredRoles = useMemo(() => {
     if (!roles) return true;
 
-    return (roles.some((requiredRole) => {
+    return roles.some((requiredRole) => {
       const hasRole = userRoles?.includes(requiredRole);
       return hasRole;
-    }));
+    });
   }, [roles, userRoles]);
 
   if (!auth) {
@@ -29,7 +29,9 @@ export function RequireAuth({ children, roles }: RequireAuthProps) {
   }
 
   if (!hasRequiredRoles) {
-    return <Navigate to={getRouteForbidden()} state={{ from: location }} replace />;
+    return (
+      <Navigate to={getRouteForbidden()} state={{ from: location }} replace />
+    );
   }
 
   return children;

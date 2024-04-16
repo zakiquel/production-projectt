@@ -3,7 +3,10 @@ import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 
 import {
-  getUserAuthData, isUserAdmin, isUserManager, userActions,
+  getUserAuthData,
+  isUserAdmin,
+  isUserManager,
+  userActions,
 } from '@/entities/User';
 import { getRouteAdminPanel, getRouteProfile } from '@/shared/const/router';
 import { classNames } from '@/shared/lib/classNames/classNames';
@@ -15,9 +18,7 @@ interface AvatarDropdownProps {
 }
 
 export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
-  const {
-    className,
-  } = props;
+  const { className } = props;
   const { t } = useTranslation();
   const isAdmin = useSelector(isUserAdmin);
   const isManager = useSelector(isUserManager);
@@ -39,12 +40,14 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
       className={classNames('', {}, [className])}
       direction="bottom left"
       items={[
-        ...(isAdminPanelAvailable ? [
-          {
-            content: t('Админка'),
-            href: getRouteAdminPanel(),
-          },
-        ] : []),
+        ...(isAdminPanelAvailable
+          ? [
+              {
+                content: t('Админка'),
+                href: getRouteAdminPanel(),
+              },
+            ]
+          : []),
         {
           content: t('Профиль'),
           href: getRouteProfile(authData.id),

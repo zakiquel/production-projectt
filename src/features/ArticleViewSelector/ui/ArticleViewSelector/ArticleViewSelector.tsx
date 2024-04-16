@@ -10,9 +10,9 @@ import { Icon } from '@/shared/ui/Icon/Icon';
 import cls from './ArticleViewSelector.module.scss';
 
 interface ArticleViewSelectorProps {
-    className?: string;
-    view: ArticleView,
-    onViewClick?: (view: ArticleView) => void;
+  className?: string;
+  view: ArticleView;
+  onViewClick?: (view: ArticleView) => void;
 }
 
 const viewTypes = [
@@ -27,11 +27,7 @@ const viewTypes = [
 ];
 
 export const ArticleViewSelector = memo((props: ArticleViewSelectorProps) => {
-  const {
-    className,
-    view,
-    onViewClick,
-  } = props;
+  const { className, view, onViewClick } = props;
 
   const onClick = (newView: ArticleView) => () => {
     onViewClick?.(newView);
@@ -44,7 +40,9 @@ export const ArticleViewSelector = memo((props: ArticleViewSelectorProps) => {
           key={viewType.icon.name}
           theme={ButtonTheme.CLEAR}
           onClick={onClick(viewType.view)}
-          className={classNames('', { [cls.notSelected]: viewType.view !== view })}
+          className={classNames('', {
+            [cls.notSelected]: viewType.view !== view,
+          })}
         >
           <Icon Svg={viewType.icon} />
         </Button>

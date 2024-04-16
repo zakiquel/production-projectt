@@ -13,19 +13,23 @@ interface CurrencySelectProps {
 }
 
 export const CurrencySelect = memo((props: CurrencySelectProps) => {
-  const {
-    className,
-    value,
-    onChange,
-    readonly,
-  } = props;
+  const { className, value, onChange, readonly } = props;
 
-  const currencyOptions = useMemo(() => Object.entries(Currency).map((val) => (
-    { value: val[0], content: val[1] })), []);
+  const currencyOptions = useMemo(
+    () =>
+      Object.entries(Currency).map((val) => ({
+        value: val[0],
+        content: val[1],
+      })),
+    [],
+  );
 
-  const onChangeHandler = useCallback((value: string) => {
-    onChange?.(value as Currency);
-  }, [onChange]);
+  const onChangeHandler = useCallback(
+    (value: string) => {
+      onChange?.(value as Currency);
+    },
+    [onChange],
+  );
 
   const { t } = useTranslation();
 

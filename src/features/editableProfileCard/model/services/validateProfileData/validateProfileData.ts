@@ -7,14 +7,7 @@ export const validateProfileData = (profile?: Profile) => {
   if (!profile) {
     return [ValidateProfileErrors.SERVER_ERROR];
   }
-  const {
-    username,
-    first,
-    lastname,
-    age,
-    country,
-    city,
-  } = profile;
+  const { username, first, lastname, age, country, city } = profile;
   const errors: ValidateProfileErrors[] = [];
 
   if (!first || !lastname || !username) {
@@ -25,7 +18,11 @@ export const validateProfileData = (profile?: Profile) => {
     errors.push(ValidateProfileErrors.INCORRECT_AGE);
   }
 
-  if (!country || Number.isInteger(country) || !(Object.values(Country).includes(country))) {
+  if (
+    !country ||
+    Number.isInteger(country) ||
+    !Object.values(Country).includes(country)
+  ) {
     errors.push(ValidateProfileErrors.INCORRECT_COUNTRY);
   }
 

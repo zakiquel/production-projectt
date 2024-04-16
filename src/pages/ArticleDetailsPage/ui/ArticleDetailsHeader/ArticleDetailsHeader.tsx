@@ -34,21 +34,14 @@ export const ArticleDetailsHeader = memo((props: ArticleDetailsHeaderProps) => {
 
   return (
     <HStack justify="between" max className={classNames('', {}, [className])}>
-      <Button
-        theme={ButtonTheme.OUTLINE}
-        onClick={onBackToList}
-      >
+      <Button theme={ButtonTheme.OUTLINE} onClick={onBackToList}>
         {t('Назад к списку статей')}
       </Button>
-      { canEdit
-        && (
-          <Button
-            theme={ButtonTheme.OUTLINE}
-            onClick={onEditArticle}
-          >
-            {t('Редактировать')}
-          </Button>
-        )}
+      {canEdit && (
+        <Button theme={ButtonTheme.OUTLINE} onClick={onEditArticle}>
+          {t('Редактировать')}
+        </Button>
+      )}
     </HStack>
   );
 });

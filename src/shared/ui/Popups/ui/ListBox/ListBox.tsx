@@ -44,7 +44,7 @@ export function ListBox(props: ListBoxProps) {
 
   return (
     <HStack gap="4">
-      { label && <span>{`${label}>`}</span>}
+      {label && <span>{`${label}>`}</span>}
       <HListbox
         as="div"
         className={classNames('', {}, [className, popupCls.popup])}
@@ -52,15 +52,12 @@ export function ListBox(props: ListBoxProps) {
         onChange={onChange}
         disabled={readonly}
       >
-        <HListbox.Button
-          disabled={readonly}
-          className={popupCls.trigger}
-        >
-          <Button disabled={readonly}>
-            {value ?? defaultValue}
-          </Button>
+        <HListbox.Button disabled={readonly} className={popupCls.trigger}>
+          <Button disabled={readonly}>{value ?? defaultValue}</Button>
         </HListbox.Button>
-        <HListbox.Options className={classNames(cls.options, {}, optionsClasses)}>
+        <HListbox.Options
+          className={classNames(cls.options, {}, optionsClasses)}
+        >
           {items?.map((item) => (
             <HListbox.Option
               key={item.value}

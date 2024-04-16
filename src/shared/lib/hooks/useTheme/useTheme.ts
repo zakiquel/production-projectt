@@ -15,17 +15,17 @@ export function useTheme(): UseThemeResult {
   const toggleTheme = () => {
     let newTheme: Theme;
     switch (theme) {
-    case Theme.DARK:
-      newTheme = Theme.NORMAL;
-      break;
-    case Theme.NORMAL:
-      newTheme = Theme.CUSTOM;
-      break;
-    case Theme.CUSTOM:
-      newTheme = Theme.DARK;
-      break;
-    default:
-      newTheme = Theme.NORMAL;
+      case Theme.DARK:
+        newTheme = Theme.NORMAL;
+        break;
+      case Theme.NORMAL:
+        newTheme = Theme.CUSTOM;
+        break;
+      case Theme.CUSTOM:
+        newTheme = Theme.DARK;
+        break;
+      default:
+        newTheme = Theme.NORMAL;
     }
     setTheme?.(newTheme);
     document.body.className = newTheme;

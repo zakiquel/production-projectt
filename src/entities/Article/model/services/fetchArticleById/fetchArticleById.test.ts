@@ -17,9 +17,7 @@ const articleData = {
       id: '1',
       type: ArticleBlockType.TEXT,
       title: 'block title',
-      paragraphs: [
-        'paragraph',
-      ],
+      paragraphs: ['paragraph'],
     },
   ],
 };

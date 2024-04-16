@@ -11,7 +11,7 @@ export const addComment = (text: string) => {
 declare global {
   namespace Cypress {
     interface Chainable {
-      addComment(text: string): Chainable<void>
+      addComment(text: string): Chainable<void>;
     }
   }
 }
