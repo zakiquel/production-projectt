@@ -723,6 +723,10 @@
       "username": "admin",
       "password": "123",
       "roles": ["ADMIN"],
+      "features": {
+        "isArticleRatingEnabled": true,
+        "isCounterEnabled": true
+      },
       "avatar": "https://clck.ru/36jJ25"
     },
     {
@@ -730,6 +734,10 @@
       "username": "user",
       "password": "user",
       "roles": ["USER"],
+      "features": {
+        "isArticleRatingEnabled": false,
+        "isCounterEnabled": false
+      },
       "avatar": "https://clck.ru/36nvwp"
     },
     {
@@ -737,6 +745,10 @@
       "username": "manager",
       "password": "manager",
       "role": ["MANAGER"],
+      "features": {
+        "isArticleRatingEnabled": true,
+        "isCounterEnabled": false
+      },
       "avatar": "https://clck.ru/36nvwp"
     },
     {
@@ -744,6 +756,10 @@
       "username": "testuser",
       "password": "123",
       "role": ["ADMIN"],
+      "features": {
+        "isArticleRatingEnabled": false,
+        "isCounterEnabled": true
+      },
       "avatar": "https://clck.ru/36nvwp"
     }
   ],
