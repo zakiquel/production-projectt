@@ -54,7 +54,9 @@
       "views": 1022,
       "createdAt": "26.04.2022",
       "userId": "1",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -124,7 +126,9 @@
       "views": 5204,
       "createdAt": "26.02.2022",
       "userId": "1",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -146,7 +150,9 @@
       "views": 94002,
       "createdAt": "26.02.2019",
       "userId": "1",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -168,7 +174,9 @@
       "views": 10222,
       "createdAt": "24.01.2022",
       "userId": "1",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -190,7 +198,9 @@
       "views": 10222,
       "createdAt": "26.02.2020",
       "userId": "1",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -212,7 +222,9 @@
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -234,7 +246,9 @@
       "views": 100,
       "createdAt": "21.02.2022",
       "userId": "1",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -256,7 +270,9 @@
       "views": 102222,
       "createdAt": "26.02.2022",
       "userId": "1",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -278,7 +294,9 @@
       "views": 3500,
       "createdAt": "15.06.2022",
       "userId": "2",
-      "type": ["WEB"],
+      "type": [
+        "WEB"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -310,7 +328,9 @@
       "views": 2400,
       "createdAt": "10.08.2022",
       "userId": "1",
-      "type": ["SCIENCE"],
+      "type": [
+        "SCIENCE"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -342,7 +362,9 @@
       "views": 1800,
       "createdAt": "05.11.2022",
       "userId": "1",
-      "type": ["MOBILE"],
+      "type": [
+        "MOBILE"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -374,7 +396,9 @@
       "views": 2800,
       "createdAt": "20.09.2022",
       "userId": "2",
-      "type": ["CYBERSECURITY"],
+      "type": [
+        "CYBERSECURITY"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -406,7 +430,9 @@
       "views": 1500,
       "createdAt": "12.04.2022",
       "userId": "2",
-      "type": ["DESIGN"],
+      "type": [
+        "DESIGN"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -438,7 +464,10 @@
       "views": 4200,
       "createdAt": "08.07.2022",
       "userId": "1",
-      "type": ["Blockchain", "Cryptocurrency"],
+      "type": [
+        "Blockchain",
+        "Cryptocurrency"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -470,7 +499,9 @@
       "views": 3200,
       "createdAt": "15.10.2022",
       "userId": "2",
-      "type": ["HEALTHCARE"],
+      "type": [
+        "HEALTHCARE"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -502,7 +533,9 @@
       "views": 2800,
       "createdAt": "03.03.2022",
       "userId": "1",
-      "type": ["WEB"],
+      "type": [
+        "WEB"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -534,7 +567,9 @@
       "views": 2800,
       "createdAt": "03.03.2022",
       "userId": "1",
-      "type": ["WEB"],
+      "type": [
+        "WEB"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -566,7 +601,9 @@
       "views": 2800,
       "createdAt": "03.03.2022",
       "userId": "1",
-      "type": ["WEB"],
+      "type": [
+        "WEB"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -598,7 +635,9 @@
       "views": 2800,
       "createdAt": "03.03.2022",
       "userId": "1",
-      "type": ["WEB"],
+      "type": [
+        "WEB"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -630,7 +669,9 @@
       "views": 2800,
       "createdAt": "03.03.2022",
       "userId": "1",
-      "type": ["WEB"],
+      "type": [
+        "WEB"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -662,7 +703,9 @@
       "views": 2800,
       "createdAt": "03.03.2022",
       "userId": "1",
-      "type": ["WEB"],
+      "type": [
+        "WEB"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -693,7 +736,9 @@
       "views": 1022,
       "createdAt": "26.04.2022",
       "userId": "1",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [],
       "id": "pq0txlK"
     },
@@ -704,7 +749,9 @@
       "views": 1022,
       "createdAt": "26.04.2022",
       "userId": "1",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [],
       "id": "kyJFjBq"
     }
@@ -722,10 +769,17 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "roles": ["ADMIN"],
+      "roles": [
+        "ADMIN"
+      ],
       "features": {
         "isArticleRatingEnabled": true,
         "isCounterEnabled": true
+      },
+      "jsonSettings": {
+        "theme": "app_custom_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
       },
       "avatar": "https://clck.ru/36jJ25"
     },
@@ -733,10 +787,17 @@
       "id": "2",
       "username": "user",
       "password": "user",
-      "roles": ["USER"],
+      "roles": [
+        "USER"
+      ],
       "features": {
         "isArticleRatingEnabled": false,
         "isCounterEnabled": false
+      },
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
       },
       "avatar": "https://clck.ru/36nvwp"
     },
@@ -744,10 +805,17 @@
       "id": "3",
       "username": "manager",
       "password": "manager",
-      "role": ["MANAGER"],
+      "role": [
+        "MANAGER"
+      ],
       "features": {
         "isArticleRatingEnabled": true,
         "isCounterEnabled": false
+      },
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
       },
       "avatar": "https://clck.ru/36nvwp"
     },
@@ -755,10 +823,17 @@
       "id": "4",
       "username": "testuser",
       "password": "123",
-      "role": ["ADMIN"],
+      "role": [
+        "ADMIN"
+      ],
       "features": {
         "isArticleRatingEnabled": false,
         "isCounterEnabled": true
+      },
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
       },
       "avatar": "https://clck.ru/36nvwp"
     }

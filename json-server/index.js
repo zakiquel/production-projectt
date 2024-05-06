@@ -21,7 +21,9 @@ server.use(async (req, res, next) => {
 server.post('/login', (req, res) => {
   try {
     const { username, password } = req.body;
-    const db = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'db.json'), 'UTF-8'));
+    const db = JSON.parse(
+      fs.readFileSync(path.resolve(__dirname, 'db.json'), 'UTF-8'),
+    );
     const { users = [] } = db;
 
     const userFromBd = users.find(
@@ -44,7 +46,6 @@ server.use((req, res, next) => {
   if (!req.headers.authorization) {
     return res.status(403).json({ message: 'AUTH ERROR' });
   }
-
   next();
 });
 
