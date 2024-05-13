@@ -15,16 +15,16 @@ export function useTheme(): UseThemeResult {
     let newTheme: Theme;
     switch (theme) {
       case Theme.DARK:
-        newTheme = Theme.NORMAL;
+        newTheme = Theme.LIGHT;
         break;
-      case Theme.NORMAL:
+      case Theme.LIGHT:
         newTheme = Theme.CUSTOM;
         break;
       case Theme.CUSTOM:
         newTheme = Theme.DARK;
         break;
       default:
-        newTheme = Theme.NORMAL;
+        newTheme = Theme.LIGHT;
     }
     setTheme?.(newTheme);
     document.body.className = newTheme;
@@ -32,7 +32,7 @@ export function useTheme(): UseThemeResult {
   };
 
   return {
-    theme: theme || Theme.NORMAL,
+    theme: theme || Theme.LIGHT,
     toggleTheme,
   };
 }
