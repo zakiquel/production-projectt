@@ -23,11 +23,11 @@ import {
   ReducersList,
 } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { Avatar } from '@/shared/ui/Avatar/Avatar';
-import { Icon } from '@/shared/ui/Icon/Icon';
-import { Skeleton } from '@/shared/ui/Skeleton/Skeleton';
 import { HStack, VStack } from '@/shared/ui/Stack';
-import { Text, TextAlign, TextSize } from '@/shared/ui/Text';
+import { Avatar } from '@/shared/ui/deprecated/Avatar/Avatar';
+import { Icon } from '@/shared/ui/deprecated/Icon/Icon';
+import { Skeleton } from '@/shared/ui/deprecated/Skeleton/Skeleton';
+import { Text, TextAlign, TextSize } from '@/shared/ui/deprecated/Text';
 
 import cls from './ArticleDetails.module.scss';
 

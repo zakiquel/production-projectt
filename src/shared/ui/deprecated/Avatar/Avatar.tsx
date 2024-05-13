@@ -1,6 +1,6 @@
 import { CSSProperties, useMemo } from 'react';
 
-import UserIcon from '../../assets/icons/user-filled.svg';
+import UserIcon from '../../../assets/icons/user-filled.svg';
 import { AppImage } from '../AppImage';
 import { Icon } from '../Icon';
 import { Skeleton } from '../Skeleton';

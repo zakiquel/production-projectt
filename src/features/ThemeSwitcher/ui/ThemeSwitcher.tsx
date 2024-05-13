@@ -1,17 +1,21 @@
 import React, { memo, useCallback } from 'react';
 
 import { saveJsonSettings } from '@/entities/User';
-import ThemeIcon from '@/shared/assets/icons/theme-dark.svg';
+import ThemeIconDeprecated from '@/shared/assets/icons/theme-dark.svg';
+import ThemeIcon from '@/shared/assets/icons/theme.svg';
 import { classNames } from '@/shared/lib/classNames/classNames';
+import { toggleFeatures } from '@/shared/lib/features';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useTheme } from '@/shared/lib/hooks/useTheme/useTheme';
-import { Button, ButtonTheme } from '@/shared/ui/Button/Button';
-import { Icon } from '@/shared/ui/Icon';
+import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button/Button';
+import { Icon as IconDeprecated } from '@/shared/ui/deprecated/Icon';
+import { Icon } from '@/shared/ui/redesigned/Icon';
 
 interface ThemeSwitcherProps {
   className?: string;
 }
 
+// eslint-disable-next-line react/prop-types
 export const ThemeSwitcher = memo(({ className }: ThemeSwitcherProps) => {
   const { toggleTheme } = useTheme();
   const dispatch = useAppDispatch();
@@ -22,13 +26,22 @@ export const ThemeSwitcher = memo(({ className }: ThemeSwitcherProps) => {
     });
   }, [dispatch, toggleTheme]);
 
-  return (
-    <Button
-      theme={ButtonTheme.CLEAR}
-      className={classNames('', {}, [className])}
-      onClick={onToggleHandler}
-    >
-      <Icon Svg={ThemeIcon} width={40} height={40} inverted />
-    </Button>
-  );
+  return toggleFeatures({
+    name: 'isAppRedesigned',
+    on: () => <Icon Svg={ThemeIcon} clickable onClick={onToggleHandler} />,
+    off: () => (
+      <Button
+        theme={ButtonTheme.CLEAR}
+        className={classNames('', {}, [className])}
+        onClick={onToggleHandler}
+      >
+        <IconDeprecated
+          Svg={ThemeIconDeprecated}
+          width={40}
+          height={40}
+          inverted
+        />
+      </Button>
+    ),
+  });
 });

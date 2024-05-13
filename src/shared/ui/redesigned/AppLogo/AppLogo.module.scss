@@ -10,6 +10,7 @@
   height: 300px;
   border-radius: 50%;
   opacity: 60%;
+  pointer-events: none;
 }
 
 .gradientSmall {
@@ -19,5 +20,6 @@
   background: radial-gradient(30.29% 30.29% at 50% 50%, rgba(94, 211, 243, 0.18) 0%, rgba(94, 211, 243, 0.106) 25.55%, rgba(94, 211, 243, 0.07) 47.27%, rgba(94, 211, 243, 0.038) 69.66%, rgba(94, 211, 243, 0) 100%);
   border-radius: 50%;
   opacity: 60%;
+  pointer-events: none;
 }
 

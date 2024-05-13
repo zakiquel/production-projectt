@@ -3,8 +3,8 @@ import { memo } from 'react';
 import { ArticleView } from '../../model/consts/articleConsts';
 
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Card } from '@/shared/ui/Card/Card';
-import { Skeleton } from '@/shared/ui/Skeleton/Skeleton';
+import { Card } from '@/shared/ui/deprecated/Card/Card';
+import { Skeleton } from '@/shared/ui/deprecated/Skeleton/Skeleton';
 
 import cls from './ArticleListItem.module.scss';
 

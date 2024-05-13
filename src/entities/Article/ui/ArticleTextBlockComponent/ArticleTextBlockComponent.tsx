@@ -3,7 +3,7 @@ import { memo } from 'react';
 import { ArticleTextBlock } from '../../model/types/article';
 
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Text } from '@/shared/ui/Text';
+import { Text } from '@/shared/ui/deprecated/Text';
 
 import cls from './ArticleTextBlockComponent.module.scss';
 

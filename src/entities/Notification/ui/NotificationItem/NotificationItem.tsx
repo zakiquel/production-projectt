@@ -3,8 +3,8 @@ import { memo } from 'react';
 import { Notification } from '../../model/types/notification';
 
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Card, CardTheme } from '@/shared/ui/Card/Card';
-import { Text } from '@/shared/ui/Text';
+import { Card, CardTheme } from '@/shared/ui/deprecated/Card/Card';
+import { Text } from '@/shared/ui/deprecated/Text';
 
 import cls from './NotificationItem.module.scss';
 

@@ -10,9 +10,9 @@ import { profileActions } from '../../model/slice/profileSlice';
 import { getUserAuthData } from '@/entities/User';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { Button, ButtonTheme } from '@/shared/ui/Button/Button';
 import { HStack } from '@/shared/ui/Stack';
-import { Text } from '@/shared/ui/Text';
+import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button/Button';
+import { Text } from '@/shared/ui/deprecated/Text';
 
 interface EditableProfileCardHeaderProps {
   className?: string;

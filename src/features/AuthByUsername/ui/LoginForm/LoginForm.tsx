@@ -15,9 +15,9 @@ import {
   ReducersList,
 } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { Button, ButtonTheme } from '@/shared/ui/Button/Button';
-import { Input } from '@/shared/ui/Input/Input';
-import { Text, TextTheme } from '@/shared/ui/Text';
+import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button/Button';
+import { Input } from '@/shared/ui/deprecated/Input/Input';
+import { Text, TextTheme } from '@/shared/ui/deprecated/Text';
 
 import cls from './LoginForm.module.scss';
 
