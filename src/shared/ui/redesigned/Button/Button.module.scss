@@ -19,6 +19,14 @@
   padding: 0;
 }
 
+.filled {
+  background: var(--light-bg-redesigned);
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 34px;
+}
+
 .square.m {
   width: var(--font-line-m);
   height: var(--font-line-m);

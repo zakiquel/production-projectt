@@ -6,12 +6,16 @@ import { initArticlesPage } from '../../model/services/initArticlesPage/initArti
 import { articlePageReducer } from '../../model/slices/articlePageSlice';
 import { ArticleInfiniteList } from '../ArticleInfiniteList/ArticleInfiniteList';
 import { ArticlePageFilters } from '../ArticlesPageFilters/ArticlePageFilters';
+import { FilterContainer } from '../FilterContainer/FilterContainer';
+import { ViewSelectorContainer } from '../ViewSelectorContainer/ViewSelectorContainer';
 
+import { StickyContentLayout } from '@/shared/layouts/StickyContentLayout';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import {
   DynamicModuleLoader,
   ReducersList,
 } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import { toggleFeatures } from '@/shared/lib/features';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { Page } from '@/widgets/Page';
@@ -39,8 +43,24 @@ const ArticlesPage = (props: ArticlesPageProps) => {
     dispatch(initArticlesPage(searchParams));
   });
 
-  return (
-    <DynamicModuleLoader reducers={reducers} removeAfterUnmount={false}>
+  const content = toggleFeatures({
+    name: 'isAppRedesigned',
+    on: () => (
+      <StickyContentLayout
+        left={<ViewSelectorContainer />}
+        right={<FilterContainer />}
+        content={
+          <Page
+            data-testid="ArticlesPage"
+            onScrollEnd={onLoadNextPart}
+            className={classNames(cls.ArticlesPageRedesigned, {}, [className])}
+          >
+            <ArticleInfiniteList className={cls.list} />
+          </Page>
+        }
+      />
+    ),
+    off: () => (
       <Page
         data-testid="ArticlesPage"
         onScrollEnd={onLoadNextPart}
@@ -49,6 +69,12 @@ const ArticlesPage = (props: ArticlesPageProps) => {
         <ArticlePageFilters />
         <ArticleInfiniteList className={cls.list} />
       </Page>
+    ),
+  });
+
+  return (
+    <DynamicModuleLoader reducers={reducers} removeAfterUnmount={false}>
+      {content}
     </DynamicModuleLoader>
   );
 };

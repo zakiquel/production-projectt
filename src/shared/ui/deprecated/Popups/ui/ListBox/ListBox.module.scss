@@ -7,11 +7,11 @@
 }
 
 .options {
-  background: var(--listbox-bg);
+  background: var(--dark-bg-redesigned);
   position: absolute;
   z-index: 10000;
   border-radius: 12px;
-  box-shadow: 4px 4px 4px var(--listbox-bg);
+  box-shadow: 4px 4px 4px var(--dark-bg-redesigned);
 }
 
 .item {
