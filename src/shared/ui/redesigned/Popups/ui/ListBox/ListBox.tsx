@@ -1,37 +1,39 @@
-import { Listbox as HListbox } from '@headlessui/react';
-import React, { Fragment, ReactNode } from 'react';
+import { Listbox as HListBox } from '@headlessui/react';
+import { Fragment, ReactNode, useMemo } from 'react';
 
 import { HStack } from '../../../../Stack';
 import { Button } from '../../../Button/Button';
+import { Icon } from '../../../Icon';
 import { mapDirectionClass } from '../../styles/consts';
 import popupCls from '../../styles/popup.module.scss';
 
+import ArrowIcon from '@/shared/assets/icons/arrow-bottom.svg';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { DropdownDirection } from '@/shared/types/ui';
 
 import cls from './ListBox.module.scss';
 
-export interface ListBoxItem {
+export interface ListBoxItem<T extends string> {
   value: string;
   content: ReactNode;
   disabled?: boolean;
 }
 
-interface ListBoxProps {
-  items?: ListBoxItem[];
+interface ListBoxProps<T extends string> {
+  items?: ListBoxItem<T>[];
   className?: string;
-  value?: string;
+  value?: T;
   defaultValue?: string;
-  onChange: (value: string) => void;
+  onChange: (value: T) => void;
   readonly?: boolean;
   direction?: DropdownDirection;
   label?: string;
 }
 
-export function ListBox(props: ListBoxProps) {
+export function ListBox<T extends string>(props: ListBoxProps<T>) {
   const {
-    items,
     className,
+    items,
     value,
     defaultValue,
     onChange,
@@ -42,24 +44,35 @@ export function ListBox(props: ListBoxProps) {
 
   const optionsClasses = [mapDirectionClass[direction], popupCls.menu];
 
+  const selectedItem = useMemo(
+    () => items?.find((item) => item.value === value),
+    [items, value],
+  );
+
   return (
     <HStack gap="4">
       {label && <span>{`${label}>`}</span>}
-      <HListbox
+      <HListBox
+        disabled={readonly}
         as="div"
-        className={classNames('', {}, [className, popupCls.popup])}
+        className={classNames(cls.ListBox, {}, [className, popupCls.popup])}
         value={value}
         onChange={onChange}
-        disabled={readonly}
       >
-        <HListbox.Button disabled={readonly} className={popupCls.trigger}>
-          <Button disabled={readonly}>{value ?? defaultValue}</Button>
-        </HListbox.Button>
-        <HListbox.Options
+        <HListBox.Button disabled={readonly} className={cls.trigger}>
+          <Button
+            variant="filled"
+            disabled={readonly}
+            addonRight={<Icon Svg={ArrowIcon} />}
+          >
+            {selectedItem?.content ?? defaultValue}
+          </Button>
+        </HListBox.Button>
+        <HListBox.Options
           className={classNames(cls.options, {}, optionsClasses)}
         >
           {items?.map((item) => (
-            <HListbox.Option
+            <HListBox.Option
               key={item.value}
               value={item.value}
               disabled={item.disabled}
@@ -67,23 +80,20 @@ export function ListBox(props: ListBoxProps) {
             >
               {({ active, selected }) => (
                 <li
-                  className={classNames(
-                    cls.item,
-                    {
-                      [popupCls.active]: active,
-                      [popupCls.disabled]: item.disabled,
-                    },
-                    [],
-                  )}
+                  className={classNames(cls.item, {
+                    [popupCls.active]: active,
+                    [popupCls.disabled]: item.disabled,
+                    [popupCls.selected]: selected,
+                  })}
                 >
-                  {selected && '✓'}
+                  {selected}
                   {item.content}
                 </li>
               )}
-            </HListbox.Option>
+            </HListBox.Option>
           ))}
-        </HListbox.Options>
-      </HListbox>
+        </HListBox.Options>
+      </HListBox>
     </HStack>
   );
 }

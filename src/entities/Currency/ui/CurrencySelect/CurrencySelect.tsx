@@ -3,7 +3,9 @@ import { useTranslation } from 'react-i18next';
 
 import { Currency } from '../../model/types/currency';
 
-import { ListBox } from '@/shared/ui/deprecated/Popups/ui/ListBox/ListBox';
+import { toggleFeatures } from '@/shared/lib/features';
+import { ListBox as ListBoxDeprecated } from '@/shared/ui/deprecated/Popups/ui/ListBox/ListBox';
+import { ListBox } from '@/shared/ui/redesigned/Popups/ui/ListBox/ListBox';
 
 interface CurrencySelectProps {
   className?: string;
@@ -13,6 +15,7 @@ interface CurrencySelectProps {
 }
 
 export const CurrencySelect = memo((props: CurrencySelectProps) => {
+  // eslint-disable-next-line react/prop-types
   const { className, value, onChange, readonly } = props;
 
   const currencyOptions = useMemo(
@@ -33,16 +36,20 @@ export const CurrencySelect = memo((props: CurrencySelectProps) => {
 
   const { t } = useTranslation();
 
-  return (
-    <ListBox
-      className={className}
-      value={value}
-      defaultValue={t('Укажите валюту')}
-      label={t('Укажите валюту')}
-      onChange={onChangeHandler}
-      items={currencyOptions}
-      readonly={readonly}
-      direction="top right"
-    />
-  );
+  const listProps = {
+    className,
+    value,
+    defaultValue: t('Валюта'),
+    label: t('Валюта'),
+    onChange: onChangeHandler,
+    items: currencyOptions,
+    readonly,
+    direction: 'top right' as const,
+  };
+
+  return toggleFeatures({
+    name: 'isAppRedesigned',
+    on: () => <ListBox {...listProps} />,
+    off: () => <ListBoxDeprecated {...listProps} />,
+  });
 });

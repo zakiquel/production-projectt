@@ -1,2 +1,2 @@
 export type { Profile } from './model/types/profile';
-export { ProfileCard } from './ui/ProfileCard/ProfileCard';
+export { ProfileCard } from '@/entities/Profile/ui/ProfileCard/ProfileCard';

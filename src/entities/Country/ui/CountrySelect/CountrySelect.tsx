@@ -3,7 +3,9 @@ import { useTranslation } from 'react-i18next';
 
 import { Country } from '../../model/types/country';
 
-import { ListBox } from '@/shared/ui/deprecated/Popups/ui/ListBox/ListBox';
+import { toggleFeatures } from '@/shared/lib/features';
+import { ListBox as ListBoxDeprecated } from '@/shared/ui/deprecated/Popups/ui/ListBox/ListBox';
+import { ListBox } from '@/shared/ui/redesigned/Popups/ui/ListBox/ListBox';
 
 interface CountrySelectProps {
   className?: string;
@@ -13,6 +15,7 @@ interface CountrySelectProps {
 }
 
 export const CountrySelect = memo((props: CountrySelectProps) => {
+  // eslint-disable-next-line react/prop-types
   const { className, value, onChange, readonly } = props;
   const { t } = useTranslation();
 
@@ -32,15 +35,20 @@ export const CountrySelect = memo((props: CountrySelectProps) => {
     [onChange],
   );
 
-  return (
-    <ListBox
-      value={value}
-      defaultValue={t('Укажите страну')}
-      label={t('Укажите страну')}
-      items={countryOptions}
-      onChange={onChangeHandler}
-      readonly={readonly}
-      direction="top right"
-    />
-  );
+  const countryProps = {
+    className,
+    value,
+    defaultValue: t('Страна'),
+    label: t('Страна'),
+    items: countryOptions,
+    onChange: onChangeHandler,
+    readonly,
+    direction: 'top right' as const,
+  };
+
+  return toggleFeatures({
+    name: 'isAppRedesigned',
+    on: () => <ListBox {...countryProps} />,
+    off: () => <ListBoxDeprecated {...countryProps} />,
+  });
 });
