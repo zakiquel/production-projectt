@@ -1,5 +1,7 @@
 :root {
   --font-family-main: consolas, "Times New Roman", serif;
+  --font-family-text-redesigned: 'Nunito Sans', sans-serif;
+  --font-family-header-redesigned: 'Roboto', sans-serif;
 
   // Small size font
   --font-size-s: 12px;
@@ -34,4 +36,18 @@
   --overlay-color: rgba(0 0 0 / 60%);
   --red-light: rgb(178 13 13);
   --red-dark: rgb(126 9 9);
+
+  // redesigned
+
+  // Small size font
+  --font-s-redesigned: var(--font-size-s) / var(--font-line-s) var(--font-family-text-redesigned);
+
+  // Medium size font
+  --font-m-redesigned: var(--font-size-m) / var(--font-line-m) var(--font-family-text-redesigned);
+
+  // Large size font
+  --font-l-redesigned: var(--font-size-l) / var(--font-line-l) var(--font-family-header-redesigned);
+
+  // XLarge size font
+  --font-xl-redesigned: var(--font-size-xl) / var(--font-line-xl) var(--font-family-header-redesigned);
 }

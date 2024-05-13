@@ -4,7 +4,9 @@ import { useSelector } from 'react-redux';
 import { AppRouter } from './providers/router';
 
 import { getUserInited, initAuthData } from '@/entities/User';
+import { MainLayout } from '@/shared/layouts/MainLayout';
 import { classNames } from '@/shared/lib/classNames/classNames';
+import { toggleFeatures } from '@/shared/lib/features';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { Navbar } from '@/widgets/Navbar';
 import { PageLoader } from '@/widgets/PageLoader';
@@ -22,17 +24,32 @@ function App() {
     return <PageLoader />;
   }
 
-  return (
-    <div className={classNames('app', {}, [])}>
-      <Suspense fallback="">
-        <Navbar />
-        <div className="content-page">
-          <Sidebar />
-          {inited && <AppRouter />}
-        </div>
-      </Suspense>
-    </div>
-  );
+  return toggleFeatures({
+    name: 'isAppRedesigned',
+    on: () => (
+      <div className={classNames('app_redesigned', {}, [])}>
+        <Suspense fallback="">
+          <MainLayout
+            header={<Navbar />}
+            content={<AppRouter />}
+            sidebar={<Sidebar />}
+            toolbar={<div />}
+          />
+        </Suspense>
+      </div>
+    ),
+    off: () => (
+      <div className={classNames('app', {}, [])}>
+        <Suspense fallback="">
+          <Navbar />
+          <div className="content-page">
+            <Sidebar />
+            <AppRouter />
+          </div>
+        </Suspense>
+      </div>
+    ),
+  });
 }
 
 export default App;
