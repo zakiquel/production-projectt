@@ -11,7 +11,6 @@ import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleT
 import EyeIcon from '@/shared/assets/icons/eye-20-20.svg';
 import { getRouteArticleDetails } from '@/shared/const/router';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { AppImage } from '@/shared/ui/deprecated/AppImage';
 import { AppLink } from '@/shared/ui/deprecated/AppLink/AppLink';
 import { Avatar } from '@/shared/ui/deprecated/Avatar/Avatar';
 import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button/Button';
@@ -19,6 +18,7 @@ import { Card } from '@/shared/ui/deprecated/Card/Card';
 import { Icon } from '@/shared/ui/deprecated/Icon/Icon';
 import { Skeleton } from '@/shared/ui/deprecated/Skeleton';
 import { Text } from '@/shared/ui/deprecated/Text';
+import { AppImage } from '@/shared/ui/redesigned/AppImage';
 
 import cls from './ArticleListItem.module.scss';
 
