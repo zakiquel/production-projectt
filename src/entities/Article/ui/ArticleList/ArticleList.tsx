@@ -7,6 +7,8 @@ import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
 import { ArticleListItemSkeleton } from '../ArticleListItem/ArticleListItemSkeleton';
 
 import { classNames } from '@/shared/lib/classNames/classNames';
+import { toggleFeatures } from '@/shared/lib/features';
+import { HStack } from '@/shared/ui/Stack';
 import { Text, TextSize } from '@/shared/ui/deprecated/Text';
 
 import cls from './ArticleList.module.scss';
@@ -44,21 +46,43 @@ export const ArticleList = memo((props: ArticleListProps) => {
     );
   }
 
-  return (
-    <div
-      data-testid="ArticleList"
-      className={classNames(cls.ArticleList, {}, [className, cls[view]])}
-    >
-      {articles.map((item) => (
-        <ArticleListItem
-          article={item}
-          view={view}
-          target={target}
-          key={item.id}
-          className={cls.card}
-        />
-      ))}
-      {isLoading && getSkeletons(view)}
-    </div>
-  );
+  return toggleFeatures({
+    name: 'isAppRedesigned',
+    on: () => (
+      <HStack
+        wrap="wrap"
+        gap="16"
+        data-testid="ArticleList"
+        className={classNames(cls.ArticleListRedesigned, {}, [])}
+      >
+        {articles.map((item) => (
+          <ArticleListItem
+            article={item}
+            view={view}
+            target={target}
+            key={item.id}
+            className={cls.card}
+          />
+        ))}
+        {isLoading && getSkeletons(view)}
+      </HStack>
+    ),
+    off: () => (
+      <div
+        data-testid="ArticleList"
+        className={classNames(cls.ArticleList, {}, [className, cls[view]])}
+      >
+        {articles.map((item) => (
+          <ArticleListItem
+            article={item}
+            view={view}
+            target={target}
+            key={item.id}
+            className={cls.card}
+          />
+        ))}
+        {isLoading && getSkeletons(view)}
+      </div>
+    ),
+  });
 });
