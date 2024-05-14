@@ -9,7 +9,7 @@ import {
 
 import { RatingCard } from '@/entities/Rating';
 import { getUserAuthData } from '@/entities/User';
-import { Skeleton } from '@/shared/ui/deprecated/Skeleton/Skeleton';
+import { Skeleton } from '@/shared/ui/redesigned/Skeleton/Skeleton';
 
 export interface ArticleRatingProps {
   className?: string;

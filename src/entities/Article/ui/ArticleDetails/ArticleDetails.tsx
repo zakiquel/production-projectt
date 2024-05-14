@@ -26,8 +26,8 @@ import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch
 import { HStack, VStack } from '@/shared/ui/Stack';
 import { Avatar } from '@/shared/ui/deprecated/Avatar/Avatar';
 import { Icon } from '@/shared/ui/deprecated/Icon/Icon';
-import { Skeleton } from '@/shared/ui/deprecated/Skeleton/Skeleton';
 import { Text, TextAlign, TextSize } from '@/shared/ui/deprecated/Text';
+import { Skeleton } from '@/shared/ui/redesigned/Skeleton/Skeleton';
 
 import cls from './ArticleDetails.module.scss';
 
@@ -42,7 +42,7 @@ const reducers: ReducersList = {
 
 export const ArticleDetails = memo((props: ArticleDetailsProps) => {
   const { className, id } = props;
-  const { t } = useTranslation();
+  const { t } = useTranslation('');
   const dispatch = useAppDispatch();
   const isLoading = useSelector(getArticleDetailsIsLoading);
   const article = useSelector(getArticleDetailsData);

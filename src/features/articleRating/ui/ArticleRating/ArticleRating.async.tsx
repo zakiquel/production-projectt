@@ -2,7 +2,7 @@ import { lazy, Suspense } from 'react';
 
 import { ArticleRatingProps } from './ArticleRating';
 
-import { Skeleton } from '@/shared/ui/deprecated/Skeleton/Skeleton';
+import { Skeleton } from '@/shared/ui/redesigned/Skeleton/Skeleton';
 
 const ArticleRatingLazy = lazy(() => import('./ArticleRating'));
 
