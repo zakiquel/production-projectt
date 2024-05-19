@@ -4,7 +4,7 @@ import { LoginFormAsync } from '../LoginForm/LoginForm.async';
 
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Loader } from '@/shared/ui/deprecated/Loader/Loader';
-import { Modal } from '@/shared/ui/deprecated/Modal/Modal';
+import { Modal } from '@/shared/ui/redesigned/Modal/Modal';
 
 interface LoginModalProps {
   className?: string;

@@ -9,11 +9,11 @@ import {
   ButtonTheme,
 } from '@/shared/ui/deprecated/Button/Button';
 import { Card } from '@/shared/ui/deprecated/Card/Card';
-import { Drawer } from '@/shared/ui/deprecated/Drawer/Drawer';
 import { Input } from '@/shared/ui/deprecated/Input/Input';
-import { Modal } from '@/shared/ui/deprecated/Modal/Modal';
 import { StarRating } from '@/shared/ui/deprecated/StarRating/StarRating';
 import { Text } from '@/shared/ui/deprecated/Text';
+import { Drawer } from '@/shared/ui/redesigned/Drawer/Drawer';
+import { Modal } from '@/shared/ui/redesigned/Modal/Modal';
 
 interface RatingCardProps {
   className?: string;
