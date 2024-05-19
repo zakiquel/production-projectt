@@ -1,3 +1,3 @@
-export { Dropdown } from '@/shared/ui/deprecated/Popups/ui/Dropdown/Dropdown';
-export { ListBox } from '@/shared/ui/deprecated/Popups/ui/ListBox/ListBox';
-export { Popover } from '@/shared/ui/deprecated/Popups/ui/Popover/Popover';
+export { Dropdown } from '@/shared/ui/redesigned/Popups/ui/Dropdown/Dropdown';
+export { ListBox } from '@/shared/ui/redesigned/Popups/ui/ListBox/ListBox';
+export { Popover } from '@/shared/ui/redesigned/Popups/ui/Popover/Popover';
