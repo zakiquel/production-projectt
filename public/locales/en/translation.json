@@ -67,5 +67,8 @@
   "Ваша оценка": "Your rate",
   "Вы оценили статью": "You rated the article",
   "Спасибо за оценку!": "Thank you!",
-  "FeatureFlags Enabled": "FeatureFlags Enabled"
+  "FeatureFlags Enabled": "FeatureFlags Enabled",
+  "{{count}} просмотров_zero": "{{count}} views",
+  "{{count}} просмотров_one": "{{count}} view",
+  "{{count}} просмотров_other": "{{count}} views"
 }
