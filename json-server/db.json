@@ -762,6 +762,36 @@
       "articleId": "4",
       "userId": "1",
       "id": 7
+    },
+    {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis deserunt, dignissimos dolor dolorem esse   fugit incidunt, ipsum iste labore laudantium natus numquam officiis, quas qui quibusdam recusandae tempore! Doloremque   ea eligendi enim magnam molestiae natus nemo perferendis tempore vero? Aliquid animi architecto blanditiis consequatur   corporis deleniti dicta dolores doloribus fugit harum impedit laborum, minima minus obcaecati placeat porro, quibusdam   quis quo quod quos sit temporibus tenetur vel. Accusamus aliquid amet aut consequatur delectus deleniti dolor   doloremque ea eius eveniet fuga, id, impedit ipsam iste iure laudantium modi molestias nesciunt numquam odit possimus   qui quia quibusdam quis rerum sint voluptatibus!",
+      "articleId": "1",
+      "userId": "1",
+      "id": 12
+    },
+    {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis deserunt, dignissimos dolor dolorem esse   fugit incidunt, ipsum iste labore laudantium natus numquam officiis, quas qui quibusdam recusandae tempore! Doloremque   ea eligendi enim magnam molestiae natus nemo perferendis tempore vero? Aliquid animi architecto blanditiis consequatur   corporis deleniti dicta dolores doloribus fugit harum impedit laborum, minima minus obcaecati placeat porro, quibusdam   quis quo quod quos sit temporibus tenetur vel. Accusamus aliquid amet aut consequatur delectus deleniti dolor   doloremque ea eius eveniet fuga, id, impedit ipsam iste iure laudantium modi molestias nesciunt numquam odit possimus   qui quia quibusdam quis rerum sint voluptatibus!",
+      "articleId": "1",
+      "userId": "1",
+      "id": 13
+    },
+    {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis deserunt, dignissimos dolor dolorem esse   fugit incidunt, ipsum iste labore laudantium natus numquam officiis, quas qui quibusdam recusandae tempore! Doloremque   ea eligendi enim magnam molestiae natus nemo perferendis tempore vero? Aliquid animi architecto blanditiis consequatur   corporis deleniti dicta dolores doloribus fugit harum impedit laborum, minima minus obcaecati placeat porro, quibusdam   quis quo quod quos sit temporibus tenetur vel. Accusamus aliquid amet aut consequatur delectus deleniti dolor   doloremque ea eius eveniet fuga, id, impedit ipsam iste iure laudantium modi molestias nesciunt numquam odit possimus   qui quia quibusdam quis rerum sint voluptatibus!",
+      "articleId": "1",
+      "userId": "1",
+      "id": 14
+    },
+    {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad earum error et illum ipsa laborum necessitatibus non   officiis omnis possimus quas, reprehenderit tempore ullam voluptatem. A aliquam cum cumque dignissimos eaque eius,   eveniet id magnam modi nemo nesciunt nobis odit officiis optio quae quaerat quas quasi saepe sint voluptatibus.   Asperiores aut debitis dicta dignissimos earum fuga libero perferendis, quibusdam repellat sapiente veritatis   voluptates voluptatibus voluptatum! Architecto at corporis, dolor dolores eaque eligendi et illum incidunt iure labore   laboriosam maiores maxime neque nobis pariatur, perferendis repellat reprehenderit sed soluta, velit? Alias   dignissimos ducimus ex rem rerum? Consectetur harum similique voluptas.",
+      "articleId": "19",
+      "userId": "2",
+      "id": 15
+    },
+    {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad earum error et illum ipsa laborum necessitatibus non   officiis omnis possimus quas, reprehenderit tempore ullam voluptatem. A aliquam cum cumque dignissimos eaque eius,   eveniet id magnam modi nemo nesciunt nobis odit officiis optio quae quaerat quas quasi saepe sint voluptatibus.   Asperiores aut debitis dicta dignissimos earum fuga libero perferendis, quibusdam repellat sapiente veritatis   voluptates voluptatibus voluptatum! Architecto at corporis, dolor dolores eaque eligendi et illum incidunt iure labore   laboriosam maiores maxime neque nobis pariatur, perferendis repellat reprehenderit sed soluta, velit? Alias   dignissimos ducimus ex rem rerum? Consectetur harum similique voluptas.",
+      "articleId": "19",
+      "userId": "2",
+      "id": 16
     }
   ],
   "users": [
@@ -778,7 +808,7 @@
         "isAppRedesigned": true
       },
       "jsonSettings": {
-        "theme": "app_custom_theme",
+        "theme": "app_dark_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false
       },
@@ -793,10 +823,11 @@
       ],
       "features": {
         "isArticleRatingEnabled": false,
-        "isCounterEnabled": false
+        "isCounterEnabled": false,
+        "isAppRedesigned": true
       },
       "jsonSettings": {
-        "theme": "app_dark_theme",
+        "theme": "app_custom_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false
       },
@@ -908,6 +939,19 @@
       "rate": 5,
       "feedback": "sfgdfg",
       "id": "9tef0aO"
+    },
+    {
+      "userId": "1",
+      "articleId": "13",
+      "rate": 4,
+      "id": "IfjJOMe"
+    },
+    {
+      "userId": "2",
+      "articleId": "19",
+      "rate": 4,
+      "feedback": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad earum error et illum ipsa laborum necessitatibus non   officiis omnis possimus quas, reprehenderit tempore ullam voluptatem. A aliquam cum cumque dignissimos eaque eius,   eveniet id magnam modi nemo nesciunt nobis odit officiis optio quae quaerat quas quasi saepe sint voluptatibus.   Asperiores aut debitis dicta dignissimos earum fuga libero perferendis, quibusdam repellat sapiente veritatis   voluptates voluptatibus voluptatum! Architecto at corporis, dolor dolores eaque eligendi et illum incidunt iure labore   laboriosam maiores maxime neque nobis pariatur, perferendis repellat reprehenderit sed soluta, velit? Alias   dignissimos ducimus ex rem rerum? Consectetur harum similique voluptas.",
+      "id": "wsJ9F-H"
     }
   ],
   "profile-ratings": [
