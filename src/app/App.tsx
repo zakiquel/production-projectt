@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { AppRouter } from './providers/router';
 
 import { getUserInited, initAuthData } from '@/entities/User';
+import { AppLoaderLayout } from '@/shared/layouts/AppLoaderLayout';
 import { MainLayout } from '@/shared/layouts/MainLayout';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { toggleFeatures } from '@/shared/lib/features';
@@ -23,7 +24,15 @@ function App() {
   }, [dispatch, inited]);
 
   if (!inited) {
-    return <PageLoader />;
+    return toggleFeatures({
+      name: 'isAppRedesigned',
+      on: () => (
+        <div id="app" className={classNames('app_redesigned', {}, [])}>
+          <AppLoaderLayout />
+        </div>
+      ),
+      off: () => <PageLoader />,
+    });
   }
 
   return toggleFeatures({

@@ -92,7 +92,10 @@ const LoginForm = memo((props: LoginFormProps) => {
       {toggleFeatures({
         name: 'isAppRedesigned',
         on: () => (
-          <VStack gap="8">
+          <VStack
+            gap="8"
+            className={classNames(cls.LoginForm, {}, [className])}
+          >
             <Text title={t('Войдите в аккаунт')} />
             {error && (
               <Text

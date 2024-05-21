@@ -808,7 +808,7 @@
         "isAppRedesigned": true
       },
       "jsonSettings": {
-        "theme": "app_dark_theme",
+        "theme": "app_custom_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false
       },
