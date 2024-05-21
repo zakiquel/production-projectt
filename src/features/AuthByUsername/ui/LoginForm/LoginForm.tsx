@@ -16,6 +16,7 @@ import {
 } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { toggleFeatures } from '@/shared/lib/features';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
+import { useForceUpdate } from '@/shared/lib/render/forceUpdate';
 import { VStack } from '@/shared/ui/Stack';
 import {
   Button as ButtonDeprecated,
@@ -45,6 +46,7 @@ const LoginForm = memo((props: LoginFormProps) => {
   const username = useSelector(getLoginUsername);
   const password = useSelector(getLoginPassword);
   const error = useSelector(getLoginError);
+  const forceUpdate = useForceUpdate();
   const isLoading = useSelector(getLoginIsLoading);
 
   const onChangeUsername = useCallback(
@@ -65,8 +67,9 @@ const LoginForm = memo((props: LoginFormProps) => {
     const result = await dispatch(loginByUsername({ username, password }));
     if (result.meta.requestStatus === 'fulfilled') {
       onSuccess();
+      forceUpdate();
     }
-  }, [onSuccess, dispatch, password, username]);
+  }, [dispatch, username, password, onSuccess, forceUpdate]);
 
   const onKeyDown = useCallback(
     (e: KeyboardEvent) => {

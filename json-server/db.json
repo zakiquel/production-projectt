@@ -808,7 +808,7 @@
         "isAppRedesigned": true
       },
       "jsonSettings": {
-        "theme": "app_custom_theme",
+        "theme": "app_dark_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false
       },
@@ -824,7 +824,7 @@
       "features": {
         "isArticleRatingEnabled": false,
         "isCounterEnabled": false,
-        "isAppRedesigned": true
+        "isAppRedesigned": false
       },
       "jsonSettings": {
         "theme": "app_custom_theme",

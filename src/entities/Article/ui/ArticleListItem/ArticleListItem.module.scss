@@ -1,7 +1,6 @@
 .list {
   .views {
     margin-left: auto;
-    margin-right: 8px;
   }
 
   .header {
@@ -11,7 +10,6 @@
 
   .username {
     margin-left: 8px;
-    margin-right: 6px;
   }
 
   .date {
@@ -44,6 +42,7 @@
 .tile {
   width: 230px;
   transition: 0.2s;
+  cursor: pointer;
 
   .date {
     position: absolute;
@@ -55,7 +54,6 @@
   &:hover {
     opacity: 0.8;
     transform: scale(1.01);
-    cursor: pointer;
 
     .date {
       display: block;
@@ -104,13 +102,17 @@
   }
 }
 
-.ArticleListItem {
+
+
+.ArticleListItemRedesigned {
   &.list {
     width: 100%;
   }
 
   &.tile {
-    width: 240px;
-    height: 350px;
+    .card {
+      height: 300px;
+      width: 240px;
+    }
   }
 }
