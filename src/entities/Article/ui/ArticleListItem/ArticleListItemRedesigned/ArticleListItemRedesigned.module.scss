@@ -1,11 +1,16 @@
 .tile {
   .card {
     width: 240px;
-    height: 350px;
+    height: 300px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.01);
+    }
   }
 
   .img {
