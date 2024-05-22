@@ -827,7 +827,7 @@
         "isAppRedesigned": true
       },
       "jsonSettings": {
-        "theme": "app_light_theme",
+        "theme": "app_dark_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false
       },
@@ -884,12 +884,12 @@
     },
     {
       "id": "2",
-      "first": "alesha",
-      "lastname": "zavalishin",
-      "age": 19,
+      "first": "Алексей",
+      "lastname": "Завалишин",
+      "age": 20,
       "currency": "RUB",
       "country": "Russia",
-      "city": "Tomsk",
+      "city": "Томск",
       "username": "pewqq",
       "avatar": "https://clck.ru/36nvwp"
     },
@@ -952,6 +952,13 @@
       "rate": 4,
       "feedback": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad earum error et illum ipsa laborum necessitatibus non   officiis omnis possimus quas, reprehenderit tempore ullam voluptatem. A aliquam cum cumque dignissimos eaque eius,   eveniet id magnam modi nemo nesciunt nobis odit officiis optio quae quaerat quas quasi saepe sint voluptatibus.   Asperiores aut debitis dicta dignissimos earum fuga libero perferendis, quibusdam repellat sapiente veritatis   voluptates voluptatibus voluptatum! Architecto at corporis, dolor dolores eaque eligendi et illum incidunt iure labore   laboriosam maiores maxime neque nobis pariatur, perferendis repellat reprehenderit sed soluta, velit? Alias   dignissimos ducimus ex rem rerum? Consectetur harum similique voluptas.",
       "id": "wsJ9F-H"
+    },
+    {
+      "userId": "2",
+      "articleId": "16",
+      "rate": 4,
+      "feedback": "jm",
+      "id": "0yHVmf7"
     }
   ],
   "profile-ratings": [

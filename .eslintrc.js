@@ -63,7 +63,8 @@ module.exports = {
           'color',
           'variant',
           'size',
-          'wrap'
+          'wrap',
+          'label',
         ],
       },
     ],

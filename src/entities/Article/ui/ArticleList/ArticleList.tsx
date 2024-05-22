@@ -32,7 +32,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
   const {
     className,
     articles,
-    view = ArticleView.TILE,
+    view = ArticleView.LIST,
     isLoading,
     target,
   } = props;
