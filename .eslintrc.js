@@ -65,6 +65,8 @@ module.exports = {
           'size',
           'wrap',
           'label',
+          'placeholder',
+          'alt'
         ],
       },
     ],

@@ -1,5 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
+import { updateViews } from '../../api/articleApi';
 import { Article } from '../../types/article';
 
 import { ThunkConfig } from '@/app/providers/StoreProvider';
@@ -9,7 +10,7 @@ export const fetchArticleById = createAsyncThunk<
   string | undefined,
   ThunkConfig<string>
 >('articleDetails/fetchArticleById', async (articleId, thunkAPI) => {
-  const { extra, rejectWithValue } = thunkAPI;
+  const { extra, rejectWithValue, dispatch } = thunkAPI;
 
   try {
     if (!articleId) {
@@ -25,6 +26,8 @@ export const fetchArticleById = createAsyncThunk<
     if (!response.data) {
       throw new Error();
     }
+
+    dispatch(updateViews(response.data));
 
     return response.data;
   } catch (e) {

@@ -2,35 +2,23 @@
   "notifications": [
     {
       "id": "1",
-      "title": "Уведомление 1",
-      "description": "Произошло какое-то событие",
+      "title": "Кто-то оценил вашу статью!",
+      "description": "Пользователь zakiquel поставил 4 звезды вашей статье",
       "userId": "1"
     },
     {
       "id": "2",
-      "title": "Уведомление 2",
-      "description": "Произошло какое-то событие",
+      "title": "Кто-то оценил вашу статью!",
+      "description": "Пользователь zakiquel поставил 4 звезды вашей статье",
       "userId": "1",
       "href": "http://localhost:3000/admin"
     },
     {
       "id": "3",
-      "title": "Уведомление 3",
-      "description": "Произошло какое-то событие",
+      "title": "Кто-то оценил вашу статью!",
+      "description": "Пользователь zakiquel поставил 4 звезды вашей статье",
       "userId": "1",
       "href": "http://localhost:3000/admin"
-    },
-    {
-      "id": "4",
-      "title": "Уведомление 4",
-      "description": "Произошло какое-то событие",
-      "userId": "1"
-    },
-    {
-      "id": "5",
-      "title": "Уведомление 5",
-      "description": "Произошло какое-то событие",
-      "userId": "1"
     }
   ],
   "posts": [
@@ -51,7 +39,7 @@
       "title": "Javascript news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png",
-      "views": 1022,
+      "views": 1026,
       "createdAt": "26.04.2022",
       "userId": "1",
       "type": [
@@ -116,14 +104,33 @@
             "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы."
           ]
         }
-      ]
+      ],
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "features": {
+          "isArticleRatingEnabled": true,
+          "isCounterEnabled": true,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_light_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://clck.ru/36jJ25"
+      }
     },
     {
       "id": "2",
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/113415626/original/a17667d573bf34559bf0d35993ed76e57d43ad00/program-python-scripts-for-automation-and-data-mining.png",
-      "views": 5204,
+      "views": 5207,
       "createdAt": "26.02.2022",
       "userId": "1",
       "type": [
@@ -140,14 +147,33 @@
             "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
           ]
         }
-      ]
+      ],
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "features": {
+          "isArticleRatingEnabled": true,
+          "isCounterEnabled": true,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
+      }
     },
     {
       "id": "3",
       "title": "Kotlin news 2019",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://yandex-images.clstorage.net/Upu4M9251/2810ee_Y/oUYWPAm_e3Yd9FhOoKR27__5zM7eT2WTpQTr3CMITeJE--ExD6jpHZMyhqR43zT4vGX-7NDernrb0OAREkzbCWQHM6jdez93qEEcDyXk9t-v2Bka716gM-DVT_nj_A0ysX6kEGooXYhjNjeELeySnzsCXXu2iQxYLATlUdeMyqiwdiXeva8JECwnKnkD5pSfLekJbXyfghHD9RkJEr14cNYpE8b62j6_oeeFk8ufE615U92YZRlcSk-1BGIGTIuMYkUXLEqceNHONnva0WaFPh8oOw8uvgBgsBXoCGM_OPAm6hNlGAoP3FFXdmLr3lIuCVFe6tQ5vuoNpRVjpv65PmBFtP0Z7IqCvqY4S9A0Ns8_COmOX05R0UCGC2tDraoglInhhphYLf5CFfZg6E-RnUvRDnu2ux1rvpYXkDecyCwiNmesGd9LIl2265qDpWYdbVqbTxzswMICZRg48A-qopWKEdYYecy_M5YmocgewO9b4r2oN_tNSq-2duIk7aitYBeUTfjtWMI8JRsLwXV07a05alxc3tIRg7Y4yvAsCBM2WRGHm7i__wI19pBoXkN9y_H9-WXrvVj8lhex9W37X0GXxh9b7njhzAS62eIGxz2PagqMTSwwMaAEqArjb2jj9BgSJYoJ789jlySSWd8iflmynevHCuyqDqTkQ3Rdy5wy12duKS5q4cwEy8gRlLTd7Ck7bM8vUiOwNLo6w2xa01fqEqa4eiytQZVnsxotEj3ZUewrJPifG4y1hEJlv5g_AaQ0bCs--TBtNxpZE9cGLZ36KawfT6GSokUquSCPWvCl63J3euoOPKIW1bCIvSANSDEuafQLHDquVUZgF_yKfXH2BQ3ZfXoBf8Q7WNOm5T3OiAk_T3yRkWAWidsQf2uxBdsRNsioH5-hVwWwW95Q_igS3kvXid77r9Z1YqT-e49R9fW-2KxrM4-2avvCNHbs3otZHm6NsEJyZAnoUY95A",
-      "views": 94002,
+      "views": 94004,
       "createdAt": "26.02.2019",
       "userId": "1",
       "type": [
@@ -164,14 +190,33 @@
             "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
           ]
         }
-      ]
+      ],
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "features": {
+          "isArticleRatingEnabled": true,
+          "isCounterEnabled": true,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
+      }
     },
     {
       "id": "4",
       "title": "Scala news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://pluspng.com/img-png/scala-logo-png-scala-logo-1200x675.png",
-      "views": 10222,
+      "views": 10224,
       "createdAt": "24.01.2022",
       "userId": "1",
       "type": [
@@ -188,14 +233,33 @@
             "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
           ]
         }
-      ]
+      ],
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "features": {
+          "isArticleRatingEnabled": true,
+          "isCounterEnabled": true,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
+      }
     },
     {
       "id": "5",
       "title": "Golang news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://www.itsec.ru/hs-fs/hubfs/ISR/Golang.png?width=750&name=Golang.png",
-      "views": 10222,
+      "views": 10224,
       "createdAt": "26.02.2020",
       "userId": "1",
       "type": [
@@ -212,14 +276,33 @@
             "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
           ]
         }
-      ]
+      ],
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "features": {
+          "isArticleRatingEnabled": true,
+          "isCounterEnabled": true,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
+      }
     },
     {
       "id": "6",
       "title": "Java news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://andreyex.ru/wp-content/uploads/2018/05/Kak-ustanovit-Java-s-apt-na-Ubuntu-18.04.jpg",
-      "views": 1022,
+      "views": 1025,
       "createdAt": "26.02.2022",
       "userId": "1",
       "type": [
@@ -236,14 +319,33 @@
             "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
           ]
         }
-      ]
+      ],
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "features": {
+          "isArticleRatingEnabled": true,
+          "isCounterEnabled": true,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
+      }
     },
     {
       "id": "7",
       "title": "Ruby news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oqV3akcU--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/pgnw91fs7tpxn0wyeqh2.jpg",
-      "views": 100,
+      "views": 102,
       "createdAt": "21.02.2022",
       "userId": "1",
       "type": [
@@ -260,14 +362,33 @@
             "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
           ]
         }
-      ]
+      ],
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "features": {
+          "isArticleRatingEnabled": true,
+          "isCounterEnabled": true,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
+      }
     },
     {
       "id": "8",
       "title": "TypeScript news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://i.ytimg.com/vi/ztk9WZClmLQ/maxresdefault.jpg",
-      "views": 102222,
+      "views": 102224,
       "createdAt": "26.02.2022",
       "userId": "1",
       "type": [
@@ -284,14 +405,33 @@
             "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
           ]
         }
-      ]
+      ],
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "features": {
+          "isArticleRatingEnabled": true,
+          "isCounterEnabled": true,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
+      }
     },
     {
       "id": "9",
       "title": "Web Development Trends 2022",
       "subtitle": "The latest in web development",
       "img": "https://static.tildacdn.biz/tild3663-3062-4635-a633-636262326435/4884783-01.png",
-      "views": 3500,
+      "views": 3502,
       "createdAt": "15.06.2022",
       "userId": "2",
       "type": [
@@ -318,14 +458,33 @@
           "type": "CODE",
           "code": "const express = require('express');\nconst app = express();\napp.get('/', (req, res) => res.send('Hello, Jamstack!'));\napp.listen(3000, () => console.log('Server listening on port 3000'));"
         }
-      ]
+      ],
+      "user": {
+        "id": "2",
+        "username": "Dmitry",
+        "password": "user",
+        "roles": [
+          "USER"
+        ],
+        "features": {
+          "isArticleRatingEnabled": false,
+          "isCounterEnabled": false,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://i.pinimg.com/originals/9a/e0/2d/9ae02d4b4288396108ef77830a59e060.jpg"
+      }
     },
     {
       "id": "10",
       "title": "Data Science Tools Overview",
       "subtitle": "Exploring the latest tools in Data Science",
       "img": "https://datasciencedojo.com/wp-content/uploads/7-data-science-tools-1030x1030.png",
-      "views": 2400,
+      "views": 2403,
       "createdAt": "10.08.2022",
       "userId": "1",
       "type": [
@@ -352,14 +511,33 @@
           "src": "https://datasciencepartners.nl/wp-content/uploads/2019/06/wat-is-jupyter-notebook.png",
           "title": "Jupyter Notebooks"
         }
-      ]
+      ],
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "features": {
+          "isArticleRatingEnabled": true,
+          "isCounterEnabled": true,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
+      }
     },
     {
       "id": "11",
       "title": "Mobile App Development Tips",
       "subtitle": "Key insights for building successful mobile apps",
       "img": "https://positiwise.com/blog/wp-content/uploads/2023/04/tips-and-ticks-to-build-successful-mobile-app-1.jpg",
-      "views": 1800,
+      "views": 1803,
       "createdAt": "05.11.2022",
       "userId": "1",
       "type": [
@@ -386,14 +564,33 @@
           "type": "CODE",
           "code": "// Example code for push notification\nconst push = require('push-notification-library');\npush.send('Hello, your app is awesome!', 'User123');"
         }
-      ]
+      ],
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "features": {
+          "isArticleRatingEnabled": true,
+          "isCounterEnabled": true,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
+      }
     },
     {
       "id": "12",
       "title": "Cyber-security Best Practices",
       "subtitle": "Securing your digital presence",
       "img": "https://www.itsecurityguru.org/wp-content/uploads/2023/10/Best-cybersecurity-practices.png",
-      "views": 2800,
+      "views": 2801,
       "createdAt": "20.09.2022",
       "userId": "2",
       "type": [
@@ -420,14 +617,33 @@
           "src": "https://www.coxblue.com/wp-content/uploads/2019/01/How-to-Run-a-Business-Security-Audit.jpg",
           "title": "Security Audit"
         }
-      ]
+      ],
+      "user": {
+        "id": "2",
+        "username": "Dmitry",
+        "password": "user",
+        "roles": [
+          "USER"
+        ],
+        "features": {
+          "isArticleRatingEnabled": false,
+          "isCounterEnabled": false,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://i.pinimg.com/originals/9a/e0/2d/9ae02d4b4288396108ef77830a59e060.jpg"
+      }
     },
     {
       "id": "13",
       "title": "UI/UX Design Principles",
       "subtitle": "Creating compelling user experiences",
       "img": "https://www.kisworks.com/blog/wp-content/uploads/2020/02/ui-ux-3.jpg",
-      "views": 1500,
+      "views": 1503,
       "createdAt": "12.04.2022",
       "userId": "2",
       "type": [
@@ -454,14 +670,33 @@
           "type": "CODE",
           "code": "// Example code for gathering user feedback\nconst feedback = require('feedback-library');\nfeedback.collectFeedback('User123');"
         }
-      ]
+      ],
+      "user": {
+        "id": "2",
+        "username": "Dmitry",
+        "password": "user",
+        "roles": [
+          "USER"
+        ],
+        "features": {
+          "isArticleRatingEnabled": false,
+          "isCounterEnabled": false,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://i.pinimg.com/originals/9a/e0/2d/9ae02d4b4288396108ef77830a59e060.jpg"
+      }
     },
     {
       "id": "14",
       "title": "Blockchain and Cryptocurrency Trends",
       "subtitle": "Exploring the latest developments in blockchain",
       "img": "https://www.cryptopolitan.com/wp-content/uploads/2023/01/Top-7-blockchain-and-cryptocurrency-trends-in-2023-copy.png",
-      "views": 4200,
+      "views": 4202,
       "createdAt": "08.07.2022",
       "userId": "1",
       "type": [
@@ -489,14 +724,33 @@
           "type": "CODE",
           "code": "// Example code for NFT smart contract\nconst nft = require('nft-contract-library');\nnft.deploySmartContract('User123');"
         }
-      ]
+      ],
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "features": {
+          "isArticleRatingEnabled": true,
+          "isCounterEnabled": true,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
+      }
     },
     {
       "id": "15",
       "title": "Artificial Intelligence in Healthcare",
       "subtitle": "Transforming the healthcare industry with AI",
       "img": "https://i.ytimg.com/vi/j6EB9HO6acE/maxresdefault.jpg",
-      "views": 3200,
+      "views": 3202,
       "createdAt": "15.10.2022",
       "userId": "2",
       "type": [
@@ -523,14 +777,33 @@
           "type": "CODE",
           "code": "// Example code for AI image recognition\nconst ai = require('image-recognition-library');\nai.recognizeImage('MedicalScan123');"
         }
-      ]
+      ],
+      "user": {
+        "id": "2",
+        "username": "Dmitry",
+        "password": "user",
+        "roles": [
+          "USER"
+        ],
+        "features": {
+          "isArticleRatingEnabled": false,
+          "isCounterEnabled": false,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://i.pinimg.com/originals/9a/e0/2d/9ae02d4b4288396108ef77830a59e060.jpg"
+      }
     },
     {
       "id": "16",
       "title": "E-commerce Platform Optimization",
       "subtitle": "Boosting performance and user experience",
       "img": "https://cdn.tveda.ru/medialibrary/ff9/ff9fa64615de701cd76e6820291e35bb/90f0b22bed4d9076debbd9592e1021ad.jpg",
-      "views": 2800,
+      "views": 2817,
       "createdAt": "03.03.2022",
       "userId": "1",
       "type": [
@@ -557,14 +830,33 @@
           "type": "CODE",
           "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
         }
-      ]
+      ],
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "features": {
+          "isArticleRatingEnabled": true,
+          "isCounterEnabled": true,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
+      }
     },
     {
       "id": "17",
       "title": "E-commerce Platform Optimization",
       "subtitle": "Boosting performance and user experience",
       "img": "https://wittysparks.com/wp-content/uploads/2019/05/ecommerce-platform-optimization-1536x937.jpg",
-      "views": 2800,
+      "views": 2805,
       "createdAt": "03.03.2022",
       "userId": "1",
       "type": [
@@ -591,14 +883,33 @@
           "type": "CODE",
           "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
         }
-      ]
+      ],
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "features": {
+          "isArticleRatingEnabled": true,
+          "isCounterEnabled": true,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
+      }
     },
     {
       "id": "18",
       "title": "E-commerce Platform Optimization",
       "subtitle": "Boosting performance and user experience",
       "img": "https://optim.tildacdn.com/tild6662-3339-4966-b230-306166393436/-/resize/840x/-/format/webp/image.png",
-      "views": 2800,
+      "views": 2803,
       "createdAt": "03.03.2022",
       "userId": "1",
       "type": [
@@ -625,14 +936,33 @@
           "type": "CODE",
           "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
         }
-      ]
+      ],
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "features": {
+          "isArticleRatingEnabled": true,
+          "isCounterEnabled": true,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
+      }
     },
     {
       "id": "19",
       "title": "E-commerce Platform Optimization",
       "subtitle": "Boosting performance and user experience",
       "img": "https://www.ixbt.com/img/n1/news/2022/5/4/1_28_large.png",
-      "views": 2800,
+      "views": 2804,
       "createdAt": "03.03.2022",
       "userId": "1",
       "type": [
@@ -659,14 +989,33 @@
           "type": "CODE",
           "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
         }
-      ]
+      ],
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "features": {
+          "isArticleRatingEnabled": true,
+          "isCounterEnabled": true,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
+      }
     },
     {
       "id": "20",
       "title": "E-commerce Platform Optimization",
       "subtitle": "Boosting performance and user experience",
       "img": "https://www.kadrof.ru/sites/default/files/illustrations/study_programming.jpg",
-      "views": 2800,
+      "views": 2804,
       "createdAt": "03.03.2022",
       "userId": "1",
       "type": [
@@ -693,14 +1042,33 @@
           "type": "CODE",
           "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
         }
-      ]
+      ],
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "features": {
+          "isArticleRatingEnabled": true,
+          "isCounterEnabled": true,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
+      }
     },
     {
       "id": "21",
       "title": "E-commerce Platform Optimization",
       "subtitle": "Boosting performance and user experience",
       "img": "https://avatars.dzeninfra.ru/get-zen_doc/3965742/pub_5f60f66d5622142b9382bdaa_5f60f6fc8b0f2342e52012a4/scale_1200",
-      "views": 2800,
+      "views": 2803,
       "createdAt": "03.03.2022",
       "userId": "1",
       "type": [
@@ -727,33 +1095,26 @@
           "type": "CODE",
           "code": "// Example code for secure payment gateway integration\nconst payment = require('secure-payment-library');\npayment.integrateSecureGateway('User123');"
         }
-      ]
-    },
-    {
-      "title": "Javascript news",
-      "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://pluspng.com/img-png/scala-logo-png-scala-logo-1200x675.png",
-      "views": 1022,
-      "createdAt": "26.04.2022",
-      "userId": "1",
-      "type": [
-        "IT"
       ],
-      "blocks": [],
-      "id": "pq0txlK"
-    },
-    {
-      "title": "TEST ARTICLE",
-      "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://pluspng.com/img-png/scala-logo-png-scala-logo-1200x675.png",
-      "views": 1022,
-      "createdAt": "26.04.2022",
-      "userId": "1",
-      "type": [
-        "IT"
-      ],
-      "blocks": [],
-      "id": "kyJFjBq"
+      "user": {
+        "id": "1",
+        "username": "admin",
+        "password": "123",
+        "roles": [
+          "ADMIN"
+        ],
+        "features": {
+          "isArticleRatingEnabled": true,
+          "isCounterEnabled": true,
+          "isAppRedesigned": true
+        },
+        "jsonSettings": {
+          "theme": "app_dark_theme",
+          "isFirstVisit": true,
+          "settingsPageHasBeenOpen": false
+        },
+        "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
+      }
     }
   ],
   "comments": [
@@ -792,6 +1153,132 @@
       "articleId": "19",
       "userId": "2",
       "id": 16
+    },
+    {
+      "text": "Статья является отличным введением в мир JavaScript для начинающих программистов. Она освещает фундаментальные концепции, начиная с простейшей программы \"Hello, world!\", и доходит до обсуждения различных способов запуска JavaScript-кода в браузере. Мне понравилось, как авторы подходят к обучению, предоставляя не только теоретические сведения, но и практические примеры кода.",
+      "articleId": "16",
+      "userId": "1",
+      "id": 17
+    },
+    {
+      "text": "Статья является отличным введением в мир JavaScript для начинающих программистов. Она освещает фундаментальные концепции, начиная с простейшей программы \"Hello, world!\", и доходит до обсуждения различных способов запуска JavaScript-кода в браузере. Мне понравилось, как авторы подходят к обучению, предоставляя не только теоретические сведения, но и практические примеры кода.",
+      "articleId": "17",
+      "userId": "1",
+      "id": 18
+    },
+    {
+      "text": "Статья является отличным введением в мир JavaScript для начинающих программистов. Она освещает фундаментальные концепции, начиная с простейшей программы \"Hello, world!\", и доходит до обсуждения различных способов запуска JavaScript-кода в браузере. Мне понравилось, как авторы подходят к обучению, предоставляя не только теоретические сведения, но и практические примеры кода.",
+      "articleId": "18",
+      "userId": "1",
+      "id": 19
+    },
+    {
+      "text": "Статья является отличным введением в мир JavaScript для начинающих программистов. Она освещает фундаментальные концепции, начиная с простейшей программы \"Hello, world!\", и доходит до обсуждения различных способов запуска JavaScript-кода в браузере. Мне понравилось, как авторы подходят к обучению, предоставляя не только теоретические сведения, но и практические примеры кода.",
+      "articleId": "20",
+      "userId": "1",
+      "id": 20
+    },
+    {
+      "text": "Статья является отличным введением в мир JavaScript для начинающих программистов. Она освещает фундаментальные концепции, начиная с простейшей программы \"Hello, world!\", и доходит до обсуждения различных способов запуска JavaScript-кода в браузере. Мне понравилось, как авторы подходят к обучению, предоставляя не только теоретические сведения, но и практические примеры кода.",
+      "articleId": "21",
+      "userId": "1",
+      "id": 21
+    },
+    {
+      "text": "Статья является отличным введением в мир JavaScript для начинающих программистов. Она освещает фундаментальные концепции, начиная с простейшей программы \"Hello, world!\", и доходит до обсуждения различных способов запуска JavaScript-кода в браузере. Мне понравилось, как авторы подходят к обучению, предоставляя не только теоретические сведения, но и практические примеры кода.",
+      "articleId": "11",
+      "userId": "1",
+      "id": 22
+    },
+    {
+      "text": "Статья является отличным введением в мир JavaScript для начинающих программистов. Она освещает фундаментальные концепции, начиная с простейшей программы \"Hello, world!\", и доходит до обсуждения различных способов запуска JavaScript-кода в браузере. Мне понравилось, как авторы подходят к обучению, предоставляя не только теоретические сведения, но и практические примеры кода.",
+      "articleId": "14",
+      "userId": "1",
+      "id": 23
+    },
+    {
+      "text": "Рассмотренный пример создания веб-страницы с использованием JavaScript демонстрирует применение изученных концепций на практике. В целом, статья представляет собой полезное руководство для тех, кто только начинает изучать JavaScript.",
+      "articleId": "10",
+      "userId": "1",
+      "id": 24
+    },
+    {
+      "text": "Рассмотренный пример создания веб-страницы с использованием JavaScript демонстрирует применение изученных концепций на практике. В целом, статья представляет собой полезное руководство для тех, кто только начинает изучать JavaScript.",
+      "articleId": "13",
+      "userId": "1",
+      "id": 25
+    },
+    {
+      "text": "Рассмотренный пример создания веб-страницы с использованием JavaScript демонстрирует применение изученных концепций на практике. В целом, статья представляет собой полезное руководство для тех, кто только начинает изучать JavaScript.",
+      "articleId": "9",
+      "userId": "1",
+      "id": 26
+    },
+    {
+      "text": "Рассмотренный пример создания веб-страницы с использованием JavaScript демонстрирует применение изученных концепций на практике. В целом, статья представляет собой полезное руководство для тех, кто только начинает изучать JavaScript.",
+      "articleId": "kyJFjBq",
+      "userId": "1",
+      "id": 27
+    },
+    {
+      "text": "Рассмотренный пример создания веб-страницы с использованием JavaScript демонстрирует применение изученных концепций на практике. В целом, статья представляет собой полезное руководство для тех, кто только начинает изучать JavaScript.",
+      "articleId": "pq0txlK",
+      "userId": "1",
+      "id": 28
+    },
+    {
+      "text": "Рассмотренный пример создания веб-страницы с использованием JavaScript демонстрирует применение изученных концепций на практике. В целом, статья представляет собой полезное руководство для тех, кто только начинает изучать JavaScript.",
+      "articleId": "8",
+      "userId": "1",
+      "id": 29
+    },
+    {
+      "text": "Рассмотренный пример создания веб-страницы с использованием JavaScript демонстрирует применение изученных концепций на практике. В целом, статья представляет собой полезное руководство для тех, кто только начинает изучать JavaScript.",
+      "articleId": "6",
+      "userId": "1",
+      "id": 30
+    },
+    {
+      "text": "Рассмотренный пример создания веб-страницы с использованием JavaScript демонстрирует применение изученных концепций на практике. В целом, статья представляет собой полезное руководство для тех, кто только начинает изучать JavaScript.",
+      "articleId": "3",
+      "userId": "1",
+      "id": 31
+    },
+    {
+      "text": "Рассмотренный пример создания веб-страницы с использованием JavaScript демонстрирует применение изученных концепций на практике. В целом, статья представляет собой полезное руководство для тех, кто только начинает изучать JavaScript.",
+      "articleId": "5",
+      "userId": "1",
+      "id": 32
+    },
+    {
+      "text": "Статья является отличным введением в мир JavaScript для начинающих программистов. Она освещает фундаментальные концепции, начиная с простейшей программы \"Hello, world!\", и доходит до обсуждения различных способов запуска JavaScript-кода в браузере. Мне понравилось, как авторы подходят к обучению, предоставляя не только теоретические сведения, но и практические примеры кода.",
+      "articleId": "15",
+      "userId": "1",
+      "id": 33
+    },
+    {
+      "text": "Статья является отличным введением в мир JavaScript для начинающих программистов. Она освещает фундаментальные концепции, начиная с простейшей программы \"Hello, world!\", и доходит до обсуждения различных способов запуска JavaScript-кода в браузере. Мне понравилось, как авторы подходят к обучению, предоставляя не только теоретические сведения, но и практические примеры кода.",
+      "articleId": "2",
+      "userId": "1",
+      "id": 34
+    },
+    {
+      "text": "Статья является отличным введением в мир JavaScript для начинающих программистов. Она освещает фундаментальные концепции, начиная с простейшей программы \"Hello, world!\", и доходит до обсуждения различных способов запуска JavaScript-кода в браузере. Мне понравилось, как авторы подходят к обучению, предоставляя не только теоретические сведения, но и практические примеры кода.",
+      "articleId": "4",
+      "userId": "1",
+      "id": 35
+    },
+    {
+      "text": "Статья является отличным введением в мир JavaScript для начинающих программистов. Она освещает фундаментальные концепции, начиная с простейшей программы \"Hello, world!\", и доходит до обсуждения различных способов запуска JavaScript-кода в браузере. Мне понравилось, как авторы подходят к обучению, предоставляя не только теоретические сведения, но и практические примеры кода.",
+      "articleId": "7",
+      "userId": "1",
+      "id": 36
+    },
+    {
+      "text": "Статья является отличным введением в мир JavaScript для начинающих программистов. Она освещает фундаментальные концепции, начиная с простейшей программы \"Hello, world!\", и доходит до обсуждения различных способов запуска JavaScript-кода в браузере. Мне понравилось, как авторы подходят к обучению, предоставляя не только теоретические сведения, но и практические примеры кода.",
+      "articleId": "12",
+      "userId": "1",
+      "id": 37
     }
   ],
   "users": [
@@ -808,15 +1295,15 @@
         "isAppRedesigned": true
       },
       "jsonSettings": {
-        "theme": "app_custom_theme",
+        "theme": "app_dark_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false
       },
-      "avatar": "https://clck.ru/36jJ25"
+      "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
     },
     {
       "id": "2",
-      "username": "user",
+      "username": "Dmitry",
       "password": "user",
       "roles": [
         "USER"
@@ -831,7 +1318,7 @@
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false
       },
-      "avatar": "https://clck.ru/36nvwp"
+      "avatar": "https://i.pinimg.com/originals/9a/e0/2d/9ae02d4b4288396108ef77830a59e060.jpg"
     },
     {
       "id": "3",
@@ -880,7 +1367,7 @@
       "country": "Belarus",
       "city": "Tomsk",
       "username": "zakiquel",
-      "avatar": "https://clck.ru/36jJ25"
+      "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
     },
     {
       "id": "2",
@@ -891,18 +1378,18 @@
       "country": "Russia",
       "city": "Томск",
       "username": "pewqq",
-      "avatar": "https://clck.ru/36nvwp"
+      "avatar": "https://i.pinimg.com/originals/9a/e0/2d/9ae02d4b4288396108ef77830a59e060.jpg"
     },
     {
       "id": "4",
-      "first": "user",
+      "first": "Dmitry Seleznev",
       "lastname": "test",
       "age": 22,
       "currency": "RUB",
       "country": "Russia",
       "city": "Tomsk",
       "username": "testuser",
-      "avatar": "https://clck.ru/36nvwp"
+      "avatar": "https://i.pinimg.com/originals/9a/e0/2d/9ae02d4b4288396108ef77830a59e060.jpg"
     }
   ],
   "article-ratings": [

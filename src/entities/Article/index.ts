@@ -10,6 +10,8 @@ export {
   getArticleDetailsIsLoading,
 } from './model/selectors/articleDetails';
 
+export { updateViews } from './model/api/articleApi';
+
 export {
   ArticleView,
   ArticleType,

@@ -41,7 +41,7 @@ export const ArticleRecommendationsList = memo(
           on: () => <Text size="l" title={t(`${label}`)} />,
           off: () => <TextDeprecated size={TextSize.L} title={t(`${label}`)} />,
         })}
-        <ArticleList articles={articles} target="_blank" view={view} />
+        <ArticleList articles={articles} view={view} />
       </VStack>
     );
   },
