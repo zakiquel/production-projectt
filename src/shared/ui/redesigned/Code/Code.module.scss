@@ -7,20 +7,25 @@
 }
 
 .CodeRedesigned {
-  padding: 20px;
+  padding: 35px 20px 20px;
   position: relative;
   background: var(--light-bg-redesigned);
-  overflow: auto;
   border: 1px solid var(--accent-redesigned);
+  display: flex;
   border-radius: 16px;
 }
 
 .copyBtn {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 12px;
+  top: 12px;
 }
 
 .copyIcon path {
   stroke: var(--primary-color);
+}
+
+.code {
+  max-width: 800px;
+  overflow-wrap: break-word;
 }

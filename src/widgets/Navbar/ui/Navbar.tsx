@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 
 import { getUserAuthData } from '@/entities/User';
 import { LoginModal } from '@/features/AuthByUsername';
+import { RegistrationModal } from '@/features/Registration';
 import { AvatarDropdown } from '@/features/avatarDropdown';
 import { NotificationButton } from '@/features/notificationButton';
 import { getRouteArticleCreate } from '@/shared/const/router';
@@ -27,14 +28,23 @@ interface NavbarProps {
 export const Navbar = memo(({ className }: NavbarProps) => {
   const { t } = useTranslation();
   const [isAuthModal, setIsAuthModal] = useState(false);
+  const [isRegistrationModal, setIsRegistrationModal] = useState(false);
   const authData = useSelector(getUserAuthData);
 
-  const onCloseModal = useCallback(() => {
+  const onCloseLoginModal = useCallback(() => {
     setIsAuthModal(false);
   }, []);
 
-  const onShowModal = useCallback(() => {
+  const onShowLoginModal = useCallback(() => {
     setIsAuthModal(true);
+  }, []);
+
+  const onCloseRegistrationModal = useCallback(() => {
+    setIsRegistrationModal(false);
+  }, []);
+
+  const onShowRegistrationModal = useCallback(() => {
+    setIsRegistrationModal(true);
   }, []);
 
   const mainClass = toggleFeatures({
@@ -78,22 +88,41 @@ export const Navbar = memo(({ className }: NavbarProps) => {
       {toggleFeatures({
         name: 'isAppRedesigned',
         on: () => (
-          <Button className={cls.links} variant="clear" onClick={onShowModal}>
-            {t('Войти')}
-          </Button>
+          <HStack gap="16">
+            <Button
+              className={cls.links}
+              variant="clear"
+              onClick={onShowRegistrationModal}
+            >
+              {t('Регистрация')}
+            </Button>
+            <Button
+              className={cls.links}
+              variant="clear"
+              onClick={onShowLoginModal}
+            >
+              {t('Войти')}
+            </Button>
+          </HStack>
         ),
         off: () => (
           <ButtonDeprecated
             className={cls.links}
             theme={ButtonTheme.CLEAR_INVERTED}
-            onClick={onShowModal}
+            onClick={onShowLoginModal}
           >
             {t('Войти')}
           </ButtonDeprecated>
         ),
       })}
       {isAuthModal && (
-        <LoginModal isOpen={isAuthModal} onClose={onCloseModal} />
+        <LoginModal isOpen={isAuthModal} onClose={onCloseLoginModal} />
+      )}
+      {isRegistrationModal && (
+        <RegistrationModal
+          isOpen={isRegistrationModal}
+          onClose={onCloseRegistrationModal}
+        />
       )}
     </header>
   );

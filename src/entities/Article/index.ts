@@ -1,6 +1,6 @@
 export { ArticleDetails } from './ui/ArticleDetails/ArticleDetails';
 
-export type { Article } from './model/types/article';
+export type { Article, ArticleBlock } from './model/types/article';
 
 export type { ArticleDetailsSchema } from './model/types/ArticleDetailsSchema';
 
@@ -10,7 +10,7 @@ export {
   getArticleDetailsIsLoading,
 } from './model/selectors/articleDetails';
 
-export { updateViews } from './model/api/articleApi';
+export { updateViews, articleApi } from '@/entities/Article/api/articleApi';
 
 export {
   ArticleView,

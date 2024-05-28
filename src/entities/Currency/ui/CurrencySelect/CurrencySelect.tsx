@@ -34,7 +34,7 @@ export const CurrencySelect = memo((props: CurrencySelectProps) => {
     [onChange],
   );
 
-  const { t } = useTranslation();
+  const { t } = useTranslation('profile');
 
   const listProps = {
     className,

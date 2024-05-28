@@ -12,6 +12,8 @@ export {
 
 export { userReducer, userActions } from './model/slice/userSlice';
 
+export { getAllUsers, createUser } from './api/userApi';
+
 export type { UserSchema, User } from './model/types/user';
 
 export { UserRole } from './model/const/userConsts';

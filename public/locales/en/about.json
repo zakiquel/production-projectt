@@ -1,3 +1,20 @@
 {
-  "О сайте": "About us"
+  "О нас": "About us",
+  "Добро пожаловать на наш веб-сайт для публикации статей!": "Welcome to our article publishing website!",
+  "Архитектура проекта": "Project architecture",
+  "Работа с данными": "Working with data",
+  "Storybook": "Storybook",
+  "CI Pipeline и Pre-commit Hooks": "CI Pipeline и Pre-commit Hooks",
+  "Работа с переводами": "Working with translations",
+  "Тестирование": "Testing",
+  "Линтинг": "Linting",
+  "Наш проект является веб-сайтом, разработанным в рамках выпускной квалификационной работы с использованием современных web-технологий. Мы предоставляем платформу для публикации и просмотра статей на различные темы.": "Our project is a website developed as part of a final qualifying work using modern web technologies. We provide a platform to publish and view articles on various topics.",
+  "Мы придерживаемся методологии Feature sliced design, которая помогает нам структурировать код для удобного развития и поддержки проекта.": "We adhere to the Feature sliced design methodology, which helps us structure the code for convenient development and support of the project.",
+  "Для управления данными мы используем Redux Toolkit. Взаимодействие с сервером осуществляется через RTK query. Мы также используем DynamicModuleLoader для асинхронной подгрузки редьюсеров.": "We use Redux Toolkit to manage data. Interaction with the server is carried out via RTK query. We also use DynamicModuleLoader to load reducers asynchronously.",
+  "Мы используем Storybook для описания стори-кейсов каждого компонента нашего приложения. Это помогает нам визуализировать и тестировать компоненты в изоляции. Запустить Storybook можно командой npm run storybook.": "We use Storybook to describe story cases for each component of our application. This helps us visualize and test components in isolation. You can run Storybook using the npm run storybook command.",
+  "Мы интегрировали непрерывную интеграцию в наш репозиторий с помощью GitHub Actions. В рамках CI прогоняются все виды тестов, происходит сборка проекта и проверка линтерами. Мы также настроили pre-commit хуки для автоматической проверки кода перед коммитом": "We have integrated continuous integration into our repository using GitHub Actions. Within CI, all types of tests are run, the project is assembled and checked by linters. We also set up pre-commit hooks to automatically check the code before committing",
+  "Для обеспечения многоязычности сайта используется библиотека i18next. Это позволяет легко добавлять новые языки и переводить контент.": "To ensure the site is multilingual, the i18next library is used. This makes it easy to add new languages and translate content.",
+  "Было уделено большое внимание тестированию приложения. Используется четыре вида тестов: unit-тесты на Jest, тесты компонентов с помощью React Testing Library, скриншотное тестирование с Loki, а также e2e-тестирование с Cypress.": "To ensure the site is multilingual, the i18next library is used. This makes it easy to add new languages and translate content.",
+  "Для поддержания чистоты и качества кода используется eslint для TypeScript кода и stylelint для файлов со стилями. Также был разработан собственный eslint плагин для строгого контроля главных архитектурных принципов.": "To maintain code cleanliness and quality, eslint is used for TypeScript code and stylelint for style files. We also developed our own eslint plugin to strictly control the main architectural principles.",
+  "Кто-то оценил вашу статью!": "Someone rated your article"
 }

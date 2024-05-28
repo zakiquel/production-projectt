@@ -1,5 +1,3 @@
-import { useTranslation } from 'react-i18next';
-
 import { Profile } from '../..';
 import {
   ProfileCardDeprecated,
@@ -33,7 +31,6 @@ export interface ProfileCardProps {
 }
 
 export const ProfileCard = (props: ProfileCardProps) => {
-  const { t } = useTranslation('profile');
   const { isLoading, error, ...other } = props;
 
   if (isLoading) {

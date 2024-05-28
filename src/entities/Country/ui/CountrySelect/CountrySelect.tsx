@@ -17,7 +17,7 @@ interface CountrySelectProps {
 export const CountrySelect = memo((props: CountrySelectProps) => {
   // eslint-disable-next-line react/prop-types
   const { className, value, onChange, readonly } = props;
-  const { t } = useTranslation();
+  const { t } = useTranslation('profile');
 
   const countryOptions = useMemo(
     () =>

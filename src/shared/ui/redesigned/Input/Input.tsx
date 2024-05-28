@@ -58,9 +58,8 @@ export const Input = memo((props: InputProps) => {
       ref.current?.focus();
     }
   }, [autofocus]);
-  const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-    onChange?.(e.target.value);
-  };
+
+  const [localValue, setLocalValue] = useState<string | number>('');
 
   const onBlur = () => {
     setIsFocused(false);
@@ -77,13 +76,27 @@ export const Input = memo((props: InputProps) => {
     [cls.withAddonRight]: Boolean(addonRight),
   };
 
+  const setValue = () => {
+    if (value) {
+      return value;
+    }
+    return localValue;
+  };
+
+  const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!value) {
+      setLocalValue(e.target.value);
+    }
+    onChange?.(e.target.value);
+  };
+
   const input = (
     <div className={classNames(cls.InputWrapper, mods, [className, cls[size]])}>
       <div className={cls.addonLeft}>{addonLeft}</div>
       <input
         ref={ref}
         type={type}
-        value={value}
+        value={setValue()}
         onChange={onChangeHandler}
         className={cls.input}
         onFocus={onFocus}

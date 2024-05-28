@@ -39,7 +39,7 @@
       "title": "Javascript news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png",
-      "views": 1026,
+      "views": 1028,
       "createdAt": "26.04.2022",
       "userId": "1",
       "type": [
@@ -118,11 +118,11 @@
           "isAppRedesigned": true
         },
         "jsonSettings": {
-          "theme": "app_light_theme",
+          "theme": "app_dark_theme",
           "isFirstVisit": true,
           "settingsPageHasBeenOpen": false
         },
-        "avatar": "https://clck.ru/36jJ25"
+        "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
       }
     },
     {
@@ -803,7 +803,7 @@
       "title": "E-commerce Platform Optimization",
       "subtitle": "Boosting performance and user experience",
       "img": "https://cdn.tveda.ru/medialibrary/ff9/ff9fa64615de701cd76e6820291e35bb/90f0b22bed4d9076debbd9592e1021ad.jpg",
-      "views": 2817,
+      "views": 2842,
       "createdAt": "03.03.2022",
       "userId": "1",
       "type": [
@@ -1392,62 +1392,7 @@
       "avatar": "https://i.pinimg.com/originals/9a/e0/2d/9ae02d4b4288396108ef77830a59e060.jpg"
     }
   ],
-  "article-ratings": [
-    {
-      "id": "1",
-      "rate": 4,
-      "feedback": "Хорошая статья",
-      "userId": "1",
-      "articleId": "1"
-    },
-    {
-      "id": "2",
-      "rate": 4,
-      "feedback": "Хорошая статья",
-      "userId": "1",
-      "articleId": "2"
-    },
-    {
-      "userId": "1",
-      "articleId": "3",
-      "rate": 3,
-      "id": "weeJVBS"
-    },
-    {
-      "userId": "1",
-      "articleId": "4",
-      "rate": 4,
-      "feedback": "фывфыв",
-      "id": "t5853An"
-    },
-    {
-      "userId": "1",
-      "articleId": "16",
-      "rate": 5,
-      "feedback": "sfgdfg",
-      "id": "9tef0aO"
-    },
-    {
-      "userId": "1",
-      "articleId": "13",
-      "rate": 4,
-      "id": "IfjJOMe"
-    },
-    {
-      "userId": "2",
-      "articleId": "19",
-      "rate": 4,
-      "feedback": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad earum error et illum ipsa laborum necessitatibus non   officiis omnis possimus quas, reprehenderit tempore ullam voluptatem. A aliquam cum cumque dignissimos eaque eius,   eveniet id magnam modi nemo nesciunt nobis odit officiis optio quae quaerat quas quasi saepe sint voluptatibus.   Asperiores aut debitis dicta dignissimos earum fuga libero perferendis, quibusdam repellat sapiente veritatis   voluptates voluptatibus voluptatum! Architecto at corporis, dolor dolores eaque eligendi et illum incidunt iure labore   laboriosam maiores maxime neque nobis pariatur, perferendis repellat reprehenderit sed soluta, velit? Alias   dignissimos ducimus ex rem rerum? Consectetur harum similique voluptas.",
-      "id": "wsJ9F-H"
-    },
-    {
-      "userId": "2",
-      "articleId": "16",
-      "rate": 4,
-      "feedback": "jm",
-      "id": "0yHVmf7"
-    }
-  ],
+  "article-ratings": [],
   "profile-ratings": [
     {
       "id": "1",

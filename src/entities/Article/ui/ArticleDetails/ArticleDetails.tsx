@@ -81,7 +81,7 @@ const Redesigned = () => {
   const article = useSelector(getArticleDetailsData);
 
   return (
-    <>
+    <VStack gap="16" max>
       <Text title={article?.title} size="l" bold />
       <Text text={article?.subtitle} size="l" />
       <AppImage
@@ -90,7 +90,7 @@ const Redesigned = () => {
         className={cls.image}
       />
       {article?.blocks.map(renderArticleBlock)}
-    </>
+    </VStack>
   );
 };
 

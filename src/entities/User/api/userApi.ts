@@ -25,6 +25,20 @@ const userApi = rtkApi.injectEndpoints({
         method: 'GET',
       }),
     }),
+    getAllUsers: build.query<User[], string>({
+      query: () => ({
+        url: `/users`,
+        method: 'GET',
+        headers: { Authorization: 'true' },
+      }),
+    }),
+    createUser: build.query<User, User>({
+      query: (user) => ({
+        url: `/users`,
+        method: 'POST',
+        body: user,
+      }),
+    }),
   }),
 });
 
@@ -32,3 +46,5 @@ export const setJsonSettingsMutation =
   userApi.endpoints.setJsonSettings.initiate;
 
 export const getUserDataByIdQuery = userApi.endpoints.getUserDataById.initiate;
+export const getAllUsers = userApi.endpoints.getAllUsers.initiate;
+export const createUser = userApi.endpoints.createUser.initiate;

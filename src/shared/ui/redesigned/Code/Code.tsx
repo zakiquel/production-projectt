@@ -33,7 +33,7 @@ export const Code = memo((props: CodeProps) => {
           className={cls.copyBtn}
           Svg={CopyIconNew}
         />
-        <code>{text}</code>
+        <code className={cls.code}>{text}</code>
       </pre>
     ),
     off: () => (

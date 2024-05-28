@@ -40,6 +40,15 @@ export const getSidebarItems = createSelector(getUserAuthData, (userData) => {
       }),
       text: 'О сайте',
     },
+    {
+      path: getRouteArticles(),
+      Icon: toggleFeatures({
+        name: 'isAppRedesigned',
+        off: () => AboutIconDeprecated,
+        on: () => ArticleIcon,
+      }),
+      text: 'Статьи',
+    },
   ];
 
   if (userData) {
@@ -52,16 +61,6 @@ export const getSidebarItems = createSelector(getUserAuthData, (userData) => {
           on: () => ProfileIcon,
         }),
         text: 'Профиль',
-        authOnly: true,
-      },
-      {
-        path: getRouteArticles(),
-        Icon: toggleFeatures({
-          name: 'isAppRedesigned',
-          off: () => AboutIconDeprecated,
-          on: () => ArticleIcon,
-        }),
-        text: 'Статьи',
         authOnly: true,
       },
       {

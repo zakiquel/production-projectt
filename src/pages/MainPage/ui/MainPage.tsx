@@ -12,7 +12,7 @@ const MainPage = () => {
     <Page data-testid="MainPage">
       <VStack gap="24">
         <ArticleRecommendationsList
-          label="Последние публикации"
+          label={t('Последние публикации')}
           view={ArticleView.LIST}
         />
       </VStack>
