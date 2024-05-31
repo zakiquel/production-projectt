@@ -12,6 +12,8 @@ import { Input } from '@/shared/ui/redesigned/Input';
 import { Skeleton } from '@/shared/ui/redesigned/Skeleton';
 import { Text } from '@/shared/ui/redesigned/Text';
 
+import cls from './ProfileCardRedesigned.module.scss';
+
 export const ProfileCardRedesignedSkeleton = () => (
   <Card padding="24" max>
     <VStack gap="32">
@@ -56,7 +58,6 @@ export const ProfileCardRedesigned = memo((props: ProfileCardProps) => {
   const {
     data,
     onChangeCountry,
-    error,
     onChangeAvatar,
     onChangeAge,
     onChangeCity,
@@ -64,7 +65,6 @@ export const ProfileCardRedesigned = memo((props: ProfileCardProps) => {
     onChangeLastname,
     onChangeUsername,
     readonly,
-    isLoading,
     className,
     onChangeCurrency,
   } = props;
@@ -79,8 +79,8 @@ export const ProfileCardRedesigned = memo((props: ProfileCardProps) => {
             <Avatar size={128} src={data?.avatar} />
           </HStack>
         )}
-        <HStack gap="24" max>
-          <VStack gap="16" max>
+        <div className={cls.container}>
+          <div className={cls.inputs}>
             <Input
               value={data?.first}
               label={t('Имя')}
@@ -107,8 +107,8 @@ export const ProfileCardRedesigned = memo((props: ProfileCardProps) => {
               onChange={onChangeCity}
               readonly={readonly}
             />
-          </VStack>
-          <VStack gap="16" max>
+          </div>
+          <div className={cls.inputs}>
             <Input
               value={data?.username}
               label={t('Никнейм')}
@@ -131,8 +131,8 @@ export const ProfileCardRedesigned = memo((props: ProfileCardProps) => {
               onChange={onChangeCountry}
               readonly={readonly}
             />
-          </VStack>
-        </HStack>
+          </div>
+        </div>
       </VStack>
     </Card>
   );

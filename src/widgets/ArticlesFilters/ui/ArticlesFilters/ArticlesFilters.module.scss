@@ -1,3 +1,17 @@
 .ArticlesFilters {
   width: 264px;
 }
+
+@media screen and (max-width: 450px) {
+  .ArticlesFilters {
+    width: 125%;
+    padding: 0;
+    border-radius: 50px;
+  }
+
+  .tabs,
+  .sort {
+    display: none;
+    visibility: hidden;
+  }
+}

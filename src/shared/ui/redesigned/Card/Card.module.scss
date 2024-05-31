@@ -49,3 +49,21 @@
 .gap_24 {
   padding: 24px;
 }
+
+@media screen and (max-width: 450px) {
+  .gap_0 {
+    padding: 0;
+  }
+
+  .gap_8 {
+    padding: 4px;
+  }
+
+  .gap_16 {
+    padding: 8px;
+  }
+
+  .gap_24 {
+    padding: 12px;
+  }
+}

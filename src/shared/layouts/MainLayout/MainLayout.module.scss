@@ -31,6 +31,10 @@
   white-space: nowrap;
 }
 
+.topHeader {
+  display: none;
+}
+
 .rightbar,
 .sidebar {
   position: sticky;
@@ -41,4 +45,40 @@
 .toolbar {
   height: 100%;
   width: 100%;
+}
+
+@media screen and (max-width: 450px) {
+  .MainLayout {
+    grid-template-areas:
+          'header header'
+          'sidebar content';
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: 50px 1fr;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .topHeader {
+    grid-area: header;
+    display: flex;
+    padding-right: 5px;
+    justify-self: end;
+  }
+
+  .rightbar {
+    display: none;
+  }
+
+  .content {
+    padding: 20px 0 0 60px;
+    margin-right: 5px;
+  }
+
+  .sidebar {
+    padding: 5px;
+    height: 100vh;
+    position: fixed;
+  }
 }

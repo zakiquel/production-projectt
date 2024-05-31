@@ -3,7 +3,6 @@
   width: var(--sidebar-width);
   background: var(--inverted-bg-color);
   position: relative;
-  transition: width 0.3s;
 
   .switchers {
     position: absolute;
@@ -50,7 +49,7 @@
   position: relative;
   height: 100%;
   border-radius: 32px;
-  transition: width 0.3s;
+  transition: width 0.2s;
 
   .appLogo {
     padding-top: 20px;

@@ -52,7 +52,7 @@ export const EditableProfileCardHeader = memo(
         {toggleFeatures({
           name: 'isAppRedesigned',
           on: () => (
-            <Card padding="24" max border="partial">
+            <Card padding="16" max border="partial">
               <HStack gap="24" justify="between">
                 <Text title={t('Профиль')} />
                 {canEdit && (

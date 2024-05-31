@@ -803,7 +803,7 @@
       "title": "E-commerce Platform Optimization",
       "subtitle": "Boosting performance and user experience",
       "img": "https://cdn.tveda.ru/medialibrary/ff9/ff9fa64615de701cd76e6820291e35bb/90f0b22bed4d9076debbd9592e1021ad.jpg",
-      "views": 2842,
+      "views": 2845,
       "createdAt": "03.03.2022",
       "userId": "1",
       "type": [
@@ -844,7 +844,7 @@
           "isAppRedesigned": true
         },
         "jsonSettings": {
-          "theme": "app_dark_theme",
+          "theme": "app_custom_theme",
           "isFirstVisit": true,
           "settingsPageHasBeenOpen": false
         },
@@ -856,7 +856,7 @@
       "title": "E-commerce Platform Optimization",
       "subtitle": "Boosting performance and user experience",
       "img": "https://wittysparks.com/wp-content/uploads/2019/05/ecommerce-platform-optimization-1536x937.jpg",
-      "views": 2805,
+      "views": 2807,
       "createdAt": "03.03.2022",
       "userId": "1",
       "type": [
@@ -897,7 +897,7 @@
           "isAppRedesigned": true
         },
         "jsonSettings": {
-          "theme": "app_dark_theme",
+          "theme": "app_custom_theme",
           "isFirstVisit": true,
           "settingsPageHasBeenOpen": false
         },
@@ -1295,7 +1295,7 @@
         "isAppRedesigned": true
       },
       "jsonSettings": {
-        "theme": "app_dark_theme",
+        "theme": "app_custom_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false
       },

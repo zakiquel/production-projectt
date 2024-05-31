@@ -27,7 +27,7 @@ export const ArticleListItemSkeleton = memo(
 
     if (view === ArticleView.LIST) {
       const cardContent = (
-        <>
+        <div className={cls.wrapper}>
           <div className={cls.header}>
             <Skeleton border="50%" height={30} width={30} />
             <Skeleton width={150} height={16} className={cls.username} />
@@ -38,7 +38,7 @@ export const ArticleListItemSkeleton = memo(
           <div className={cls.footer}>
             <Skeleton height={36} width={200} />
           </div>
-        </>
+        </div>
       );
       return (
         <div className={classNames(mainClass, {}, [className, cls[view]])}>

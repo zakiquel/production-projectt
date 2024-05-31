@@ -102,7 +102,9 @@
   }
 }
 
-
+.wrapper {
+  padding: 8px;
+}
 
 .ArticleListItemRedesigned {
   &.list {
@@ -115,4 +117,7 @@
       width: 240px;
     }
   }
+}
+
+@media screen and (max-width: 450px) {
 }

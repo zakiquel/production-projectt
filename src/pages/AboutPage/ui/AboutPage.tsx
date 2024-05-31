@@ -41,7 +41,7 @@ const AboutPage = () => {
           )}
           bold
         />
-        <AppImage src={FSDImage} />
+        <AppImage src={FSDImage} className={cls.img} />
         <Text
           title={t('Работа с данными')}
           text={t(
@@ -52,7 +52,7 @@ const AboutPage = () => {
           bold
         />
         <div className={cls.wrapper}>
-          <Icon Svg={ReduxImage} width={750} height={400} />
+          <Icon Svg={ReduxImage} className={cls.img} />
         </div>
         <Text
           title={t('Storybook')}
@@ -63,8 +63,7 @@ const AboutPage = () => {
           )}
           bold
         />
-        <AppImage src={StorybookImage} />
-
+        <AppImage src={StorybookImage} className={cls.img} />
         <Text
           title={t('CI Pipeline и Pre-commit Hooks')}
           text={t(
@@ -75,7 +74,12 @@ const AboutPage = () => {
           bold
         />
         <div className={cls.wrapper}>
-          <AppImage src={PipelineImage} width={700} height={400} />
+          <AppImage
+            src={PipelineImage}
+            width={700}
+            height={400}
+            className={cls.imgPipeLine}
+          />
         </div>
         <Text
           title={t('Работа с переводами')}
