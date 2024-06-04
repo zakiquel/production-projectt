@@ -8,6 +8,7 @@ import { fetchCommentsByArticleId } from '../../model/services/fetchCommentsByAr
 import { getArticleComments } from '../../model/slices/articleDetailsCommentSlice';
 
 import { CommentList } from '@/entities/Comment';
+import { getUserAuthData } from '@/entities/User';
 import { AddCommentForm } from '@/features/addCommentForm';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { toggleFeatures } from '@/shared/lib/features';
@@ -31,6 +32,7 @@ export const ArticleDetailsComments = memo(
     const comments = useSelector(getArticleComments.selectAll);
     const commentsIsLoading = useSelector(getArticleCommentsIsLoading);
     const { t } = useTranslation();
+    const userData = useSelector(getUserAuthData);
 
     const onSendComment = useCallback(
       (text: string) => {
@@ -52,9 +54,16 @@ export const ArticleDetailsComments = memo(
             <TextDeprecated size={TextSize.L} title={t('Комментарии')} />
           ),
         })}
-        <Suspense fallback={<Loader />}>
-          <AddCommentForm onSendComment={onSendComment} />
-        </Suspense>
+        {userData ? (
+          <Suspense fallback={<Loader />}>
+            <AddCommentForm onSendComment={onSendComment} />
+          </Suspense>
+        ) : (
+          <Text
+            text={t('Авторизуйтесь, чтобы отправлять комментарии')}
+            align="center"
+          />
+        )}
         <CommentList isLoading={commentsIsLoading} comments={comments} />
       </VStack>
     );

@@ -39,7 +39,7 @@
       "title": "Javascript news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png",
-      "views": 1028,
+      "views": 1033,
       "createdAt": "26.04.2022",
       "userId": "1",
       "type": [
@@ -1295,7 +1295,7 @@
         "isAppRedesigned": true
       },
       "jsonSettings": {
-        "theme": "app_custom_theme",
+        "theme": "app_dark_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false
       },
