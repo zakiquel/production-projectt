@@ -39,7 +39,7 @@
       "title": "Javascript news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png",
-      "views": 1033,
+      "views": 1036,
       "createdAt": "26.04.2022",
       "userId": "1",
       "type": [
@@ -130,7 +130,7 @@
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/113415626/original/a17667d573bf34559bf0d35993ed76e57d43ad00/program-python-scripts-for-automation-and-data-mining.png",
-      "views": 5207,
+      "views": 5208,
       "createdAt": "26.02.2022",
       "userId": "1",
       "type": [
@@ -1355,6 +1355,25 @@
         "settingsPageHasBeenOpen": false
       },
       "avatar": "https://clck.ru/36nvwp"
+    },
+    {
+      "id": "b136ef98-0813-eebd-e89a-03a989b1910a",
+      "username": "asd",
+      "password": "dsa",
+      "roles": [
+        "USER"
+      ],
+      "features": {
+        "isArticleRatingEnabled": false,
+        "isCounterEnabled": false,
+        "isAppRedesigned": true
+      },
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
+      },
+      "avatar": ""
     }
   ],
   "profile": [
@@ -1390,6 +1409,17 @@
       "city": "Tomsk",
       "username": "testuser",
       "avatar": "https://i.pinimg.com/originals/9a/e0/2d/9ae02d4b4288396108ef77830a59e060.jpg"
+    },
+    {
+      "id": "b136ef98-0813-eebd-e89a-03a989b1910a",
+      "first": "",
+      "lastname": "",
+      "age": 18,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "",
+      "username": "asd",
+      "avatar": ""
     }
   ],
   "article-ratings": [],

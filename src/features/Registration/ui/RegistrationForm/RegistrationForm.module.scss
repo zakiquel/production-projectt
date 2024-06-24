@@ -15,6 +15,14 @@
 
 .loader {
   display: flex;
+  justify-self: center;
+  align-self: center;
+  align-content: center;
   justify-content: center;
-  align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+  .RegistrationForm {
+    width: 100%;
+  }
 }

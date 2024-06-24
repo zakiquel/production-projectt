@@ -65,8 +65,8 @@ const RegistrationForm = ({ className, onSuccess }: RegistrationFormProps) => {
 
   if (isLoading) {
     return (
-      <VStack gap="8" className={cls.loader}>
-        <Loader />
+      <VStack gap="8">
+        <Loader className={cls.loader} />
       </VStack>
     );
   }

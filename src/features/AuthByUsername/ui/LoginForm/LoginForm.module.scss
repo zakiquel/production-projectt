@@ -12,3 +12,9 @@
   margin-top: 15px;
   margin-left: auto;
 }
+
+@media screen and (max-width: 450px) {
+  .LoginForm {
+    width: 100%;
+  }
+}
