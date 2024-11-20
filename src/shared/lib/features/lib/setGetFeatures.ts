@@ -1,9 +1,7 @@
-import { LOCAL_STORAGE_LAST_DESIGN_KEY } from '@/shared/const/localstorage';
 import { FeatureFlags } from '@/shared/types/featureFlags';
 
 const defaultFeatures: FeatureFlags = {
-  isAppRedesigned:
-    localStorage.getItem(LOCAL_STORAGE_LAST_DESIGN_KEY) === 'new',
+  isAppRedesigned: true,
 };
 
 let featureFlags: FeatureFlags = {
@@ -19,6 +17,7 @@ export function setFeatureFlag(newFeatureFlags?: FeatureFlags) {
 export function getFeatureFlag(flag: keyof FeatureFlags) {
   return featureFlags[flag];
 }
+
 export function getAllFeatureFlags() {
   return featureFlags;
 }
